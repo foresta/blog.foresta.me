@@ -1,0 +1,19 @@
+{
+  "name": "blog.foreta.me",
+  "version": "0.0.1",
+  "description": "ブログの静的ページのレイアウトなど",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foresta/blog.foresta.me.git"
+  },
+  "author": "kz_morita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foresta/blog.foresta.me/issues"
+  },
+  "homepage": "https://github.com/foresta/blog.foresta.me#readme"
+}
