@@ -1,11 +1,5 @@
-<!DOCTYPE>
-{{ with .Site.LanguageCode }}<html lang="{{ . }}">{{ else }}<html>{{ end }}
-<head>
-    <meta chatset="utf-8">
-    <title>{{ .Title }}</title>
-</head>
-<body>
-    <header class="post__header">
+{{ partial "_header.html" . }}
+<header class="post__header">
         <h1 class="content__title">{{ .Title }}</h1>
         <p class="content__meta">
             <time class="content__date">
@@ -24,14 +18,5 @@
             </article>
         </div>
     </div>
-    <div class="sidevar">
-        <h1 class="site-header">foresta.me</h1>
-        <h2 class="site-description">エンジニアブログ</h2>
-        <ul>
-            <li>About me</li>
-            <li>All</li>
-            <li>Categories</li>
-        </ul>
-    </div>
-</body>
-</html>
+{{ partial "_sidebar.html" . }}
+{{ partial "_footer.html" . }}

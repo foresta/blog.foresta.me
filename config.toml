@@ -1,3 +1,7 @@
 baseurl = "https://blog.foresta.me/"
 languageCode = "jp"
-title = "My New Hugo Site"
+title = "foreta.me"
+
+[Params]
+author = "kazuki morita"
+description = "日々の開発とかいろいろ"
