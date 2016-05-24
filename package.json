@@ -18,5 +18,8 @@
   "homepage": "https://github.com/foresta/blog.foresta.me#readme",
   "devDependencies": {
     "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "material-design-lite": "^1.1.3"
   }
 }
