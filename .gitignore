@@ -10,4 +10,5 @@ cover.out
 *.swo
 .DS_Store
 *~
-node_module/
+*.log
+node_modules/

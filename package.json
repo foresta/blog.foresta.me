@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/foresta/blog.foresta.me/issues"
   },
-  "homepage": "https://github.com/foresta/blog.foresta.me#readme"
+  "homepage": "https://github.com/foresta/blog.foresta.me#readme",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
 }
