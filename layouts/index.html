@@ -1,5 +1,5 @@
 {{ partial "_header.html" . }}
-<header class="post__header">
+    <header class="content__header">
         <h1 class="content__title">{{ .Title }}</h1>
         <p class="content__meta">
             <time class="content__date">
@@ -11,10 +11,7 @@
         </p>
     </header>
     <div class="main">
-        <div class="container">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                  Button
-            </button>
+        <div class="page-content">
         </div>
     </div>
 {{ partial "_sidebar.html" . }}

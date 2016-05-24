@@ -1,6 +1,6 @@
 baseurl = "https://blog.foresta.me/"
 languageCode = "jp"
-title = "foreta.me"
+title = "foresta.me"
 
 [taxonomies]
 category = "categories"
