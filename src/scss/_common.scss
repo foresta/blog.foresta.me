@@ -1,3 +1,5 @@
+@import "colors";
+
 /* 
  *   font
  */
@@ -68,7 +70,7 @@ p {
 }
 
 a {
-    color: rgb(255, 64, 129);
+    color: $link-color;
     font-weight: 500;
 }
 
