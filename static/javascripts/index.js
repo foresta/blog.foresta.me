@@ -46,9 +46,18 @@
 
 	"use strict";
 
-	//require("!style!css!./scss/style.css");
+	var _RippleEffect = __webpack_require__(6);
+
+	var _RippleEffect2 = _interopRequireDefault(_RippleEffect);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 	__webpack_require__(1);
-	document.write(__webpack_require__(4));
+
+	var rippleBtns = document.querySelectorAll(".ripple");
+	Array.from(rippleBtns).forEach(function (btn) {
+	    new _RippleEffect2.default(btn);
+	});
 
 /***/ },
 /* 1 */
@@ -60,7 +69,7 @@
 	var content = __webpack_require__(2);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(3)(content, {});
+	var update = __webpack_require__(4)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -80,18 +89,73 @@
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(5)();
+	exports = module.exports = __webpack_require__(3)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "/*\nhtml5doctor.com Reset Stylesheet\nv1.6.1\nLast Updated: 2010-09-17\nAuthor: Richard Clark - http://richclarkdesign.com \nTwitter: @rich_clark\n*/\nhtml, body, div, span, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\nabbr, address, cite, code,\ndel, dfn, em, img, ins, kbd, q, samp,\nsmall, strong, sub, sup, var,\nb, i,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent; }\n\nbody {\n  line-height: 1; }\n\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nnav ul {\n  list-style: none; }\n\nul li {\n  list-style-type: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\na {\n  margin: 0;\n  padding: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent; }\n\n/* change colours to suit your needs */\nins {\n  background-color: #ff9;\n  color: #000;\n  text-decoration: none; }\n\n/* change colours to suit your needs */\nmark {\n  background-color: #ff9;\n  color: #000;\n  font-style: italic;\n  font-weight: bold; }\n\ndel {\n  text-decoration: line-through; }\n\nabbr[title], dfn[title] {\n  border-bottom: 1px dotted;\n  cursor: help; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n/* change border colour to suit your needs */\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #cccccc;\n  margin: 1em 0;\n  padding: 0; }\n\ninput, select {\n  vertical-align: middle; }\n\n/* sidebar */\n/* \n * font\n */\n/* font size */\nhtml {\n  font-size: 62.5%; }\n\nbody {\n  font-size: 1.6rem; }\n\nh1 {\n  font-size: 3.0rem; }\n\nh2 {\n  font-size: 2.6rem; }\n\nh3 {\n  font-size: 2.4rem; }\n\nh4 {\n  font-size: 2.2rem; }\n\nh5 {\n  font-size: 2.0rem; }\n\nh6 {\n  font-size: 1.8rem; }\n\nbody {\n  font-family: \"Helvetica\", \"Arial\", \"sans-serif\";\n  font-weight: 400;\n  line-height: 1.4; }\n\nh1 {\n  font-weight: 400;\n  line-height: 1.35;\n  letter-spacing: -0.02em; }\n\nh2 {\n  font-weight: 400;\n  line-height: 48px; }\n\nh3 {\n  font-weight: 400;\n  line-height: 40px; }\n\nh4 {\n  font-weight: 400;\n  line-height: 32px; }\n\nh5 {\n  font-weight: 500;\n  line-height: 1;\n  letter-spacing: 0.02em; }\n\nh6 {\n  font-weight: 400;\n  line-height: 24px;\n  letter-spacing: 0.04em; }\n\np {\n  font-weight: 400;\n  line-height: 24px;\n  letter-spacing: 0; }\n\na {\n  color: #ff4081;\n  font-weight: 500; }\n\n/*\n *  common.scss\n */\nbody {\n  background-color: #f4f4f4;\n  color: #505050; }\n\n/*\n * size\n */\n/*\n *  header\n */\n.content__header {\n  background-color: #20d2c9;\n  width: 100%;\n  color: #ffffff;\n  height: 300px;\n  /*    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12); */ }\n  .content__header .header-inner {\n    margin-left: 240px;\n    padding: 20px; }\n  .content__header .content__title {\n    font-size: 34px;\n    min-height: 90px; }\n\n/*\n *  sidebar\n */\n#sidebar {\n  width: 240px;\n  height: 100%;\n  z-order: 1;\n  background-color: #f4f4f4;\n  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);\n  text-align: center;\n  position: absolute;\n  top: 0;\n  left: 0; }\n  #sidebar .site-logo {\n    text-align: center;\n    margin-top: 20px; }\n  #sidebar .site-description {\n    font-size: 1.6rem; }\n  #sidebar ul {\n    text-align: left; }\n    #sidebar ul li a {\n      color: #505050;\n      display: block;\n      padding: 10px;\n      text-decoration: none;\n      transition: background-color 0.3s linear; }\n      #sidebar ul li a:hover {\n        background-color: #d4d4d4;\n        transition: background-color 0.1s linear; }\n\n/*\n * components/main\n */\n.main {\n  margin-left: 240px;\n  margin-top: -150px;\n  padding: 8px; }\n  .main .page-content {\n    margin: 8px;\n    padding: 16px;\n    background-color: #ffffff;\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }\n", ""]);
+	exports.push([module.id, "/*\nhtml5doctor.com Reset Stylesheet\nv1.6.1\nLast Updated: 2010-09-17\nAuthor: Richard Clark - http://richclarkdesign.com \nTwitter: @rich_clark\n*/\nhtml, body, div, span, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\nabbr, address, cite, code,\ndel, dfn, em, img, ins, kbd, q, samp,\nsmall, strong, sub, sup, var,\nb, i,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent; }\n\nbody {\n  line-height: 1; }\n\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nnav ul {\n  list-style: none; }\n\nul li {\n  list-style-type: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\na {\n  margin: 0;\n  padding: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent; }\n\n/* change colours to suit your needs */\nins {\n  background-color: #ff9;\n  color: #000;\n  text-decoration: none; }\n\n/* change colours to suit your needs */\nmark {\n  background-color: #ff9;\n  color: #000;\n  font-style: italic;\n  font-weight: bold; }\n\ndel {\n  text-decoration: line-through; }\n\nabbr[title], dfn[title] {\n  border-bottom: 1px dotted;\n  cursor: help; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n/* change border colour to suit your needs */\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #cccccc;\n  margin: 1em 0;\n  padding: 0; }\n\ninput, select {\n  vertical-align: middle; }\n\n/* sidebar */\n/* \n * font\n */\n/* font size */\nhtml {\n  font-size: 62.5%; }\n\nbody {\n  font-size: 1.6rem; }\n\nh1 {\n  font-size: 3.0rem; }\n\nh2 {\n  font-size: 2.6rem; }\n\nh3 {\n  font-size: 2.4rem; }\n\nh4 {\n  font-size: 2.2rem; }\n\nh5 {\n  font-size: 2.0rem; }\n\nh6 {\n  font-size: 1.8rem; }\n\nbody {\n  font-family: \"Helvetica\", \"Arial\", \"sans-serif\";\n  font-weight: 400;\n  line-height: 1.4; }\n\nh1 {\n  font-weight: 400;\n  line-height: 1.35;\n  letter-spacing: -0.02em; }\n\nh2 {\n  font-weight: 400;\n  line-height: 48px; }\n\nh3 {\n  font-weight: 400;\n  line-height: 40px; }\n\nh4 {\n  font-weight: 400;\n  line-height: 32px; }\n\nh5 {\n  font-weight: 500;\n  line-height: 1;\n  letter-spacing: 0.02em; }\n\nh6 {\n  font-weight: 400;\n  line-height: 24px;\n  letter-spacing: 0.04em; }\n\np {\n  font-weight: 400;\n  line-height: 24px;\n  letter-spacing: 0; }\n\na {\n  color: #ff4081;\n  font-weight: 500; }\n\n/*\n *  common.scss\n */\nbody {\n  background-color: #f4f4f4;\n  color: #505050; }\n\n/*\n * size\n */\n.ripple {\n  position: relative; }\n\n/*\n *  header\n */\n.content__header {\n  background-color: #20d2c9;\n  width: 100%;\n  color: #ffffff;\n  height: 300px;\n  /*    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12); */ }\n  .content__header .header-inner {\n    margin-left: 240px;\n    padding: 20px; }\n  .content__header .content__title {\n    font-size: 34px;\n    min-height: 90px; }\n\n/*\n *  sidebar\n */\n#sidebar {\n  width: 240px;\n  height: 100%;\n  z-order: 1;\n  background-color: #f4f4f4;\n  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);\n  text-align: center;\n  position: absolute;\n  top: 0;\n  left: 0; }\n  #sidebar .site-logo {\n    text-align: center;\n    margin-top: 20px; }\n  #sidebar .site-description {\n    font-size: 1.6rem; }\n  #sidebar ul {\n    text-align: left; }\n    #sidebar ul li a {\n      color: #505050;\n      display: block;\n      padding: 10px;\n      text-decoration: none;\n      transition: background-color 0.3s linear; }\n      #sidebar ul li a:hover {\n        background-color: #d4d4d4;\n        transition: background-color 0.1s linear; }\n\n/*\n * components/main\n */\n.main {\n  margin-left: 240px;\n  margin-top: -150px;\n  padding: 8px; }\n  .main .page-content {\n    margin: 8px;\n    padding: 16px;\n    background-color: #ffffff;\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }\n", ""]);
 
 	// exports
 
 
 /***/ },
 /* 3 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function () {
+		var list = [];
+
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for (var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if (item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+
+		// import a list of modules into the list
+		list.i = function (modules, mediaQuery) {
+			if (typeof modules === "string") modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for (var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if (typeof id === "number") alreadyImportedModules[id] = true;
+			}
+			for (i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if (typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if (mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if (mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+/***/ },
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -343,67 +407,69 @@
 
 
 /***/ },
-/* 4 */
+/* 5 */,
+/* 6 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 
-	module.exports = "This is content.js";
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	"use strict";
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function () {
-		var list = [];
+	 * Ripple Effect for material design
+	 */
 
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for (var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if (item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
+	var RippleEffect = function () {
+	    function RippleEffect(btn) {
+	        _classCallCheck(this, RippleEffect);
 
-		// import a list of modules into the list
-		list.i = function (modules, mediaQuery) {
-			if (typeof modules === "string") modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for (var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if (typeof id === "number") alreadyImportedModules[id] = true;
-			}
-			for (i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if (typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if (mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if (mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
+	        this.btn = btn;
+	        this.setListener();
+	    }
+
+	    _createClass(RippleEffect, [{
+	        key: 'setListener',
+	        value: function setListener() {
+	            var _this = this;
+
+	            this.btn.addEventListener('mousedown', function (e) {
+	                e.preventDefault();
+	                var clientX = e.clientX;
+	                var clientY = e.clientY;
+
+	                var effect = document.createElement('div');
+	                effect.classList.add('ripple-effect');
+	                effect.style.position = 'absolute';
+	                effect.style.top = clientY;
+	                effect.style.left = clientX;
+	                effect.style.width = '10px';
+	                effect.style.height = '10px';
+	                effect.style.backgroundColor = 'red';
+	                _this.btn.appendChild(effect);
+
+	                console.log("on mouse down :(" + clientX + "," + clientY + ")");
+	            });
+
+	            this.btn.addEventListener('touchstart', function (e) {
+	                e.preventDefault();
+	                var clientX = e.changedTouches[0].clientX;
+	                var clientY = e.changedTouches[0].clientY;
+
+	                console.log("touch started :(" + clientX + "," + clientY + ")");
+	            });
+	        }
+	    }]);
+
+	    return RippleEffect;
+	}();
+
+	exports.default = RippleEffect;
 
 /***/ }
 /******/ ]);

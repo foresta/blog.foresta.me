@@ -1,3 +1,8 @@
-//require("!style!css!./scss/style.css");
+import RippleEffect from "./js/RippleEffect";
 require("./scss/style.scss");
-document.write(require("./js/content.js"));
+
+let rippleBtns = document.querySelectorAll(".ripple");
+Array.from(rippleBtns).forEach((btn) => {
+    new RippleEffect(btn);
+});
+
