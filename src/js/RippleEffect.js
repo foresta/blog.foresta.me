@@ -8,24 +8,22 @@ export default class RippleEffect
         this.setListener()
     }
 
+    effect(x, y) {
+       let effectElm = document.createElement('div')
+       effectElm.classList.add('ripple-effect')
+       effectElm.style.top = y
+       effectElm.style.left = x
+       this.btn.insertBefore(effectElm, this.btn.firstChild)
+    }
+
     setListener() {
         this.btn.addEventListener('mousedown', (e) => {
             e.preventDefault()
-            let clientX = e.clientX
-            let clientY = e.clientY
+            let x = e.offsetX
+            let y = e.offsetY
 
-            let effect = document.createElement('div')
-            effect.classList.add('ripple-effect')
-            effect.style.position = 'absolute'
-            effect.style.top = clientY
-            effect.style.left = clientX
-            effect.style.width = '10px'
-            effect.style.height = '10px'
-            effect.style.backgroundColor = 'red'
-            this.btn.appendChild(effect)
-
-            console.log("on mouse down :("+ clientX + "," + clientY + ")")
-        });
+            this.effect(x,y);
+       });
 
         this.btn.addEventListener('touchstart', (e) => {
             e.preventDefault()
