@@ -17,9 +17,9 @@
         position: absolute;
         width: 10px;
         height: 10px;
-        background-color: $main-color;
+        background-color: $sidebar-link-ripple-color;
         border-radius: 50%;
-        animation: scale 1s ease-out;
+        animation: scale 1.5s ease-out;
         opacity: 0;
         z-index: 0;
     }

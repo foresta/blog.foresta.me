@@ -4,7 +4,7 @@
         <div class="header-inner">
         <h1 class="content__title">{{ .Title }}</h1>
         <p class="content__meta">
-            <time class="content__date">{{ .Date }}</time>
+            <span class="content__date">{{ .Date }}</span>
             <span class="content__category">
                 <a href="category-url">category</a>
             </span>
@@ -12,8 +12,8 @@
         </div>
     </header>
     <div class="main">
-        <div class="page-content">
+        <article class="page-content">
             {{ .Content }}
-        </div>
+        </article>
     </div>
 {{ partial "_footer.html" . }}

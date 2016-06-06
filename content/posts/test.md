@@ -1,8 +1,6 @@
 +++
-# date = "2016-05-20T01:52:05+09:00"
-date = "2016-05-20+09:00"
 title = "hugoとWebpackでブログのレイアウト作成してみた"
-
+date = "2016-06-05"
 +++
 
 # 動機
@@ -33,4 +31,13 @@ for ($i = 1; $i < 10; $i++) {
 * ふたつめ
 * みっつめ
 
-## auto reloadのしくみ
+### auto reloadのしくみ
+
+#### h4
+
+##### h5
+
+
+[link](http://google.com)
+
+# http://google.com
