@@ -47,3 +47,24 @@
         @include link-hover-animation;
     }
 }
+
+/* 専用のscssファイルに移植する */
+.floating-action-btn {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $link-color;
+    padding: 14px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.14),0 6px 2px -4px rgba(0,0,0,.2),0 2px 10px 0 rgba(0,0,0,.12);
+    
+    i {
+        color: white; /* _colorsに指定する */
+    }
+}
+
+.share {
+    position: absolute;
+    top: 140px;
+    right: 30px;
+}
