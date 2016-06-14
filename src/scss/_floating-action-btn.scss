@@ -1,0 +1,42 @@
+/*
+ *  floating action btn layout
+ */
+
+$floating-btn-normal: 56px;
+$floating-btn-mini: 40px;
+
+.floating-action-btn {
+    display: block;
+    width: $floating-btn-normal;
+    height: $floating-btn-normal;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.14),0 6px 2px -4px rgba(0,0,0,.2),0 2px 10px 0 rgba(0,0,0,.12);
+    text-align: center;
+
+    &.main {
+        background-color: $main-color;
+        color: white;
+    }
+
+    &.sub {
+        background-color: $sub-color;
+        color: white;
+    }
+
+    i {
+        line-height: $floating-btn-normal;
+        font-size: 2.4rem;
+    }
+
+    &.mini {
+        width: $floating-btn-mini;
+        height: $floating-btn-mini;
+        i {
+            line-height: $floating-btn-mini;
+            font-size: 2.4rem;
+        }
+    }
+
+}
+
+

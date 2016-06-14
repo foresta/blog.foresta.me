@@ -1,11 +1,13 @@
 $main-color: #20d2c9;
-$sub-color: #263238;
+
+/*$sub-color: #263238;*/
+$sub-color: #ff4081;
 $background-color: #f4f4f4;
 $box-color: #ffffff;
 
 $text-color: #505050;
 $header-font-color: #ffffff;
-$link-color: #ff4081;
+$link-color: $sub-color;
 
 /* sidebar */
 $sidebar-color: $background-color;
