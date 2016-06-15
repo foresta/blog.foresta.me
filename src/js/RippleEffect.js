@@ -13,6 +13,7 @@ export default class RippleEffect
        effectElm.classList.add('ripple-effect')
        effectElm.style.top = y
        effectElm.style.left = x
+
        this.btn.insertBefore(effectElm, this.btn.firstChild)
     }
 

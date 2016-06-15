@@ -2,7 +2,6 @@
 
 @mixin link-hover-animation {
     display: inline-block;
-    
     &:hover, &:focus {
         &:after{
             width: 100%;
