@@ -50,7 +50,8 @@
 
 @keyframes openShare {
     0% { border-radius: 50%; width: 56px; height: 56px; }
-    100% { border-radius: 5px; width: 400px; height: 200px; }
+    30% { border-radius: 5px; }
+    100% { width: 400px; height: 200px; }
 }
 
 .share {
