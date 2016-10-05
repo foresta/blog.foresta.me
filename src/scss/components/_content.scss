@@ -55,11 +55,12 @@
 }
 
 .share-btn-wrap {
+  position: absolute;
+  z-index: 2;
+  top: -25px;
+  right: 10px;
 
   .share {
-    position: absolute;
-    top: 140px;
-    right: 30px;
 
     &.open {
         animation: openShare .5s cubic-bezier(0.77, 0, 0.175, 1);

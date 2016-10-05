@@ -9,7 +9,8 @@
     height: 300px;
 
     .header-inner {
-        margin-left: $sidebar-size;
+        max-width: 800px;
+        margin: 0 auto;
         padding: 30px;
         position: relative;
 
@@ -24,4 +25,3 @@
         }
     }
 }
-
