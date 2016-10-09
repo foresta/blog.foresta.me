@@ -1,33 +1,32 @@
 {{ partial "_header.html" . }}
 {{ partial "_sidebar.html" . }}
-  <div class="main">
-    <div class="main-wrap">
-      <header class="content__header">
-        <div class="header-inner">
-        <h1 class="content__title">{{ .Title }}</h1>
-        <p class="content__meta">
-          <span class="content__date">{{ .Date }}</span>
-          <span class="content__category">
-            <a href="category-url">category</a>
-          </span>
-        </p>
-        </div>
-      </header>
-      <div class="page-content-wrap">
-        <article class="page-content">
-          <div class="share-btn-wrap">
-            <a class="share floating-action-btn sub" href=""><i class="material-icons">share</i></a>
-            <ul class="social-btns">
-              <li>tw</li>
-              <li>fb</li>
-              <li>B!</li>
-              <li>Pc</li>
-            </ul>
-          </div>
-
-            {{ .Content }}
-        </article>
-      <div class="page-content-wrap">
+<div class="main">
+  <header class="content__header">
+    <div class="header-inner">
+      <h1 class="content__title">{{ .Title }}</h1>
+      <p class="content__meta">
+        <span class="content__date">{{ .Date }}</span>
+        <span class="content__category">
+          <a href="category-url">category</a>
+        </span>
+      </p>
     </div>
+  </header>
+  <!-- <div class="page-content-wrap"> -->
+  <div class="card page-content">
+    <div class="share-btn-wrap">
+      <a class="share floating-action-btn sub" href=""><i class="material-icons">share</i></a>
+      <ul class="social-btns">
+        <li>tw</li>
+        <li>fb</li>
+        <li>B!</li>
+        <li>Pc</li>
+      </ul>
+    </div>
+    <article class="post">
+      {{ .Content }}
+    </article>
   </div>
+  <!-- </div> -->
+</div>
 {{ partial "_footer.html" . }}

@@ -1,0 +1,52 @@
+//
+// posted contents layout
+//
+.post {
+
+    color: $text-color;
+
+    h1 {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #eee;
+    }
+
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h4, h5, h6 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    li {
+        list-style-type: none;
+        position: relative;
+        padding-left: 20px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $main-color;
+            margin-top: -4px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        @include link-hover-animation;
+    }
+}

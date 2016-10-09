@@ -1,16 +1,23 @@
+// リセット
 @import "reset";
-@import "colors";
-@import "font";
-@import "common";
-@import "media-query";
-@import "size";
-@import "animation";
-@import "ripple-effect";
+
+// 基本設定
+@import "colors";       // 色
+@import "font";         // フォント
+@import "media-query";  // メディアクエリ
+@import "size";         // サイズ
+
 @import "link-hover-animation";
+
+@import "common";
+
+@import "ripple-effect";
 @import "floating-action-btn";
+
 @import "components/share-button";
 @import "components/header";
 @import "components/sidebar";
 @import "components/main";
-@import "components/content";
+@import "components/post";
 @import "components/footer";
+@import "components/card";
