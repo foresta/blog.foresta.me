@@ -8,8 +8,7 @@ Array.from(rippleBtns).forEach((btn) => {
     new RippleEffect(btn)
 })
 
-let shareBtns = document.querySelectorAll(".share")
+let shareBtns = document.querySelectorAll(".share-button")
 Array.from(shareBtns).forEach((btn) => {
     new ShareButton(btn)
 })
-
