@@ -20,3 +20,15 @@ $break-point-tablet: 768px;
     @content;
   }
 }
+
+@mixin media-sp(){
+  @media screen and (max-width: $break-point-tablet) {
+    @content;
+  }
+}
+
+@mixin media-pc(){
+  @media screen and (min-width: $break-point-tablet) {
+    @content;
+  }
+}

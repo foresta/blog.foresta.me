@@ -4,12 +4,12 @@
 
 #sidebar {
 
-  @include min-screen($break-point-smartphone)
+  @include media-sp
   {
     display: none;
   }
 
-  @include min-screen($break-point-tablet)
+  @include media-pc
   {
     display: block;
   }
