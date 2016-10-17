@@ -1,72 +1,91 @@
+$opened-size: 200px;
+$scale: $opened-size / $floating-btn-normal;
 
-@keyframes openShare {
-    0% { border-radius: 50%; width: 56px; height: 56px; background-color: $sub-color;}
-    30% { border-radius: 5px; }
-    100% { width: 400px; height: 200px; background-color: #ffffff; }
-}
+$social-btn-close-size: 25px;
+$social-btn-size: 48px;
 
 .share-button {
   position: absolute;
-  z-index: 2;
   top: -28px; // NOTICE::floating-btn-normal / 2
-  right: 10px;
+  right: 60px;
+  color: white;
 
   .share {
+    z-index: 1;
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 
-    &.open {
-        animation: openShare .5s cubic-bezier(0.77, 0, 0.175, 1);
-        border-radius: 5px;
-        width: 400px;
-        height: 200px;
-        background-color: #ffffff;
+  .social-btns {
+
+    li{
+      background-color: #686868;
+      width: $social-btn-close-size;
+      height: $social-btn-close-size;
+      border-radius: 50%;
+      text-align: center;
+      line-height: $social-btn-size;
+
+      margin: auto;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    &.open{
+      $padding: -132px;
+
+      li {
+        transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        width: $social-btn-size;
+        height: $social-btn-size;
+
+        &:hover {
+          transition: all 600ms 0s ease;
+          -webkit-transition: all 600ms 0s ease;
+        }
+
+        &.facebook {
+          top: $padding;
+          &:hover {
+            background-color: #3b5999;
+          }
+        }
+        &.pocket {
+          right: $padding;
+          &:hover {
+            background-color: #ee4056;
+          }
+        }
+        &.hatena {
+          bottom: $padding;
+          &:hover {
+            background-color: #00a4de;
+          }
+        }
+        &.twitter {
+          left: $padding;
+          &:hover {
+            background-color: #55acee; // twitter color
+          }
+        }
+      }
     }
 
     &.close {
-
-    }
-  }
-
-  $social-btn-size: 200px;
-  .social-btns {
-    background-color: $sub-color;
-    width: $social-btn-size;
-    height: $social-btn-size;
-    border-radius: 50%;
-    position: relative;
-
-    $btn-size: 50px;
-    li{
-      background-color: desaturate(darken($sub-color, 10%), 10%);
-      width: $btn-size;
-      height: $btn-size;
-      border-radius: 50%;
-      text-align: center;
-      line-height: $btn-size;
-
-      margin: auto;
-      position: absolute;
-
-      $padding: 8px;
-      &:nth-child(1) {
-        top: $padding;
-        left: 0;
-        right: 0;
-      }
-      &:nth-child(2) {
-        top:0;
-        bottom:0;
-        right: $padding;
-      }
-      &:nth-child(3) {
-        left: 0;
-        right: 0;
-        bottom: $padding;
-      }
-      &:nth-child(4) {
-        top: 0;
-        bottom: 0;
-        left: $padding;
+      li {
+        transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       }
     }
   }
+
 }
