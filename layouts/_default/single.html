@@ -14,14 +14,23 @@
   </header>
   <!-- <div class="page-content-wrap"> -->
   <div class="card page-content">
-
     <div class="share-button">
-      <a class="share floating-action-btn sub" href=""><i class="material-icons">share</i></a>
+      <a class="share floating-action-btn sub" href="">
+        <i class="material-icons">share</i>
+      </a>
       <ul class="social-btns">
-        <li class="floating-action-btn twitter">t</li>
-        <li class="floating-action-btn facebook">f</li>
-        <li class="floating-action-btn hatena">B!</li>
-        <li class="floating-action-btn pocket">P</li>
+        <li class="floating-action-btn twitter">
+          <a data-url="{{ .Permalink }}">t</a>
+        </li>
+        <li class="floating-action-btn facebook">
+          <a data-url="{{ .Permalink }}">f</a>
+        </li>
+        <li class="floating-action-btn hatena">
+          <a data-url="{{ .Permalink }}">B!</a>
+        </li>
+        <li class="floating-action-btn pocket">
+          <a data-url="{{ .Permalink }}">P</a>
+        </li>
       </ul>
     </div>
 

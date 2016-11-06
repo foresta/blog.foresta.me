@@ -1,6 +1,3 @@
-$opened-size: 200px;
-$scale: $opened-size / $floating-btn-normal;
-
 $social-btn-close-size: 25px;
 $social-btn-size: 48px;
 
@@ -14,14 +11,9 @@ $social-btn-size: 48px;
     z-index: 1;
     display: block;
     position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
   }
 
   .social-btns {
-
     li{
       background-color: #686868;
       width: $social-btn-close-size;
@@ -47,6 +39,10 @@ $social-btn-size: 48px;
         -webkit-transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         width: $social-btn-size;
         height: $social-btn-size;
+
+        a {
+          color: inherit;
+        }
 
         &:hover {
           transition: all 600ms 0s ease;
