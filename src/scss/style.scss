@@ -1,23 +1,18 @@
-// リセット
-@import "reset";
+// utils
+@import "utils/_media-query.scss";
 
-// 基本設定
-@import "colors";       // 色
-@import "font";         // フォント
-@import "media-query";  // メディアクエリ
-@import "size";         // サイズ
+// base 
+@import "bases/base";
 
-@import "link-hover-animation";
+// modules
+@import "modules/link-hover-animation";
+@import "modules/ripple-effect";
+@import "modules/floating-action-btn";
 
-@import "common";
 
-@import "ripple-effect";
-@import "floating-action-btn";
+// layout
+@import "layouts/layout";
 
-@import "components/share-button";
-@import "components/header";
-@import "components/sidebar";
-@import "components/main";
-@import "components/post";
-@import "components/footer";
-@import "components/card";
+@import "modules/share-button";
+@import "modules/post";
+@import "modules/card";
