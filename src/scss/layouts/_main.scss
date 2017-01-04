@@ -1,28 +1,43 @@
 /*
- * components/main
+ * layouts/main
  */
 
-.main {
+.l-main {
   @include media-pc
   {
     margin-left: $sidebar-size;
   }
 
-  padding: 0 8px;
+  .l-post-header {
+    padding: 24px;
+    position: relative;
 
-  &::before {
-    content: '';
-    width: 100%;
-    height: 300px;
-    background-color: $main-color;
-    position: absolute;
-    left: 0;
-    top: 0;
+    .container {
+        max-width: 900px;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        background-color: $main-color;
+        height: 250px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: -1;
+    }
   }
+}
 
-  .page-content {
+.l-post {
     position: relative;
     max-width: 900px;
     margin: 8px auto;
-  }
+
+    .l-share {
+        position: absolute;
+        top: -28px;
+        right: 20px;
+    }
 }

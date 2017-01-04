@@ -1,11 +1,13 @@
 /*
  *  header
  */
+$header-bg-color: #555555;
 
-header {
+
+.l-header {
     border-top: 3px solid $main-color;
-    height: 65px;
-    background-color: #555555;
+    height: 55px;
+    background-color: $header-bg-color;
     width: 100%;
     color: white;
     text-align: center;

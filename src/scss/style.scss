@@ -1,7 +1,7 @@
 // utils
 @import "utils/_media-query.scss";
 
-// base 
+// base
 @import "bases/base";
 
 // modules
@@ -13,6 +13,7 @@
 // layout
 @import "layouts/layout";
 
+@import "modules/post-header";
 @import "modules/share-button";
-@import "modules/post";
+@import "modules/markdown";
 @import "modules/card";

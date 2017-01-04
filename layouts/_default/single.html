@@ -1,20 +1,19 @@
 {{ partial "_header.html" . }}
 {{ partial "_sidebar.html" . }}
-<div class="main">
-  <div class="content__header">
-    <div class="header-inner">
-      <h1 class="content__title">{{ .Title }}</h1>
-      <p class="content__meta">
-        <span class="content__date">{{ .Date }}</span>
-        <span class="content__category">
+<div class="l-main">
+  <div class="l-post-header post-header">
+    <div class="container">
+      <h1 class="post-header__title">{{ .Title }}</h1>
+      <p class="post-header__meta">
+        <span class="posts-header__date">{{ .Date }}</span>
+        <span class="posts-header__category">
           <a href="category-url">category</a>
         </span>
       </p>
     </div>
   </div>
-  <!-- <div class="page-content-wrap"> -->
-  <div class="card page-content">
-    <div class="share-button">
+  <div class="l-post card">
+    <div class="l-share share-button">
       <a class="share floating-action-btn sub" href="">
         <i class="material-icons">share</i>
       </a>
@@ -34,7 +33,7 @@
       </ul>
     </div>
 
-    <article class="post">
+    <article class="post markdown">
       {{ .Content }}
     </article>
   </div>

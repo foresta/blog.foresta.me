@@ -1,11 +1,10 @@
 $social-btn-close-size: 25px;
+$social-btn-close-px: 25;
 $social-btn-size: 48px;
+$social-btn-px: 45;
+$angle: 45;
 
 .share-button {
-  position: absolute;
-  top: -28px; // NOTICE::floating-btn-normal / 2
-  right: 60px;
-  color: white;
 
   .share {
     z-index: 1;
@@ -56,7 +55,8 @@ $social-btn-size: 48px;
           }
         }
         &.pocket {
-          right: $padding;
+          left: -132 * 1.732 / 2 + px;
+          bottom: -132 / 2 + px;
           &:hover {
             background-color: #ee4056;
           }
@@ -68,7 +68,8 @@ $social-btn-size: 48px;
           }
         }
         &.twitter {
-          left: $padding;
+          left: -132 * 1.732 / 2 + px;
+          top: -132 / 2 + px;
           &:hover {
             background-color: #55acee; // twitter color
           }
