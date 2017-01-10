@@ -17,13 +17,45 @@ hugoの使用説明をする
 ```javascript
 var a = 1;
 ```
+aaa
 
 ```php
-$a = 1;
+<?php
+
 for ($i = 1; $i < 10; $i++) {
     echo $i;
 }
+
+for ($i = 1; $i < 10; $i++) {
+    echo $i;
+}
+for ($i = 1; $i < 10; $i++) {
+    echo $i;
+}
+for ($i = 1; $i < 10; $i++) {
+    echo $i;
+}
+for ($i = 1; $i < 10; $i++) {
+    echo $i;
+}
+
 ```
+
+```
+$ test
+$ sudo apt-get install hogehoge
+```
+
+```css
+pre {
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 2.0rem;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+```
+
 
 ### 手順
 
@@ -41,3 +73,19 @@ for ($i = 1; $i < 10; $i++) {
 [link](http://google.com)
 
 # http://google.com
+
+* test
+* test
+* test
+
+  head1|head2|
+-------|-----|
+  a    |    n|
+  text | text |
+
+
+```html
+<html>
+    <body> This HTML </body>
+</html>
+```

@@ -1,6 +1,9 @@
 baseurl = "https://blog.foresta.me/"
 languageCode = "jp"
-title = "foresta.me"
+title = "blog.foresta.me"
+
+pygmentsCodeFences = true
+pygmentsOptions = "linenos=table,nobackground=true"
 
 [taxonomies]
 category = "categories"
