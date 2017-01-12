@@ -38,6 +38,11 @@
     padding: 24px;
     margin: 8px auto;
 
+    &.card:hover {
+        @include shadow(2);
+    }
+
+
     .l-share {
         position: absolute;
         top: -28px;
