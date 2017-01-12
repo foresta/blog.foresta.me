@@ -2,6 +2,8 @@ baseurl = "https://blog.foresta.me/"
 languageCode = "jp"
 title = "blog.foresta.me"
 
+uglyurls = true
+
 pygmentsCodeFences = true
 pygmentsOptions = "linenos=table,nobackground=true"
 

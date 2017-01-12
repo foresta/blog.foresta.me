@@ -1,0 +1,42 @@
+/*
+ * box-layout
+ */
+
+ .l-box {
+    display: block;
+    box-sizing: border-box;
+}
+
+ .l-box-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+     @include media-sp {
+        flex-direction: column;
+     }
+
+     @include media-pc {
+
+        @for $i from 1 through 10 {
+            &.col#{$i} {
+                .l-box {
+                    width: #{(100% / $i)};
+                    position: relative;
+                    > * {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      bottom: 0;
+                      right: 0;
+                    }
+
+                    &:before {
+                        content: "";
+                        display: block;
+                        padding-top: 80%;
+                    }
+                }
+            }
+        }
+     }
+ }
