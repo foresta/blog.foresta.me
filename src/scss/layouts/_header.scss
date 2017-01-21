@@ -5,10 +5,6 @@ $header-bg-color: #555555;
 
 
 .l-header {
-  @include media-pc
-  {
-    margin-left: $sidebar-size;
-  }
 
   border-top: 3px solid $main-color;
   height: 55px;

@@ -3,10 +3,6 @@
  */
 
 .l-main {
-  @include media-pc
-  {
-    margin-left: $sidebar-size;
-  }
 
   margin-top: 55px;
 
@@ -36,6 +32,7 @@
     position: relative;
     max-width: 900px;
     padding: 24px;
+    padding-top: 48px;
     margin: 8px auto;
 
     &.card:hover {

@@ -1,8 +1,6 @@
 +++
 title = "OptionParserのソースコードを読む"
 date = "2016-06-05"
-url  = ""
-slug = "read-optioni-parser"
 +++
 
 この記事は[Elixir (その2)とPhoenix Advent Calendar 2016](http://qiita.com/advent-calendar/2016/elixir2_and_phoenix) の1９日目の記事です。
@@ -15,15 +13,15 @@ slug = "read-optioni-parser"
 下記に記載するソースコードは全て、公式のものを引用しています。
 
 # 環境
-Elixir 1.3.3
-[ドキュメント](https://hexdocs.pm/elixir/1.3.3/OptionParser.html)
-[ソースコード](https://github.com/elixir-lang/elixir/blob/v1.3.3/lib/elixir/lib/option_parser.ex)
+Elixir 1.3.3  
+[ドキュメント](https://hexdocs.pm/elixir/1.3.3/OptionParser.html)  
+[ソースコード](https://github.com/elixir-lang/elixir/blob/v1.3.3/lilb/elixir/lib/option_parser.ex)  
 
 
 ## おおまかな流れ
 
 1. parse/2 　　　(外部に公開するインターフェース)
-2. do_parse/6　（実際にパースの再帰処理を行っているところ）
+2. `do_parse/6`　（実際にパースの再帰処理を行っているところ）
 3. next/4 　　　　(パース処理)
 
 # ソースコード
@@ -36,31 +34,31 @@ Elixir 1.3.3
 ```ex
 @spec parse(argv, options) :: {parsed, argv, errors}
 def parse(argv, opts \\ []) when is_list(argv) and is_list(opts) do
-do_parse(argv, compile_config(opts), [], [], [], true)
+  do_parse(argv, compile_config(opts), [], [], [], true)
 end
 ```
 
-引数のoptsをcomple_config/1を通して加工してdo_parseに渡しています。
-また、do_parse/6の結果をそのまま返しています。
+引数のoptsを`comple_config/1`を通して加工して`do_parse`に渡しています。
+また、`do_parse/6`の結果をそのまま返しています。
 
-### compile_config/1
+### `compile_config/1`
 ```ex
 
 defp compile_config(opts) do
-aliases = opts[:aliases] || []
+  aliases = opts[:aliases] || []
 
-{switches, strict} = cond do
-opts[:switches] && opts[:strict] ->
-raise ArgumentError, ":switches and :strict cannot be given together"
-s = opts[:switches] ->
-{s, false}
-s = opts[:strict] ->
-{s, true}
-true ->
-{[], false}
-end
+  {switches, strict} = cond do
+    opts[:switches] && opts[:strict] ->
+      raise ArgumentError, ":switches and :strict cannot be given together"
+    s = opts[:switches] ->
+      {s, false}
+    s = opts[:strict] ->
+      {s, true}
+    true ->
+      {[], false}
+  jend
 
-{aliases, switches, strict}
+  {aliases, switches, strict}
 end
 ```
 
@@ -68,7 +66,7 @@ end
 そして、`:switches`と`:strict`が同時には使用できないみたいです。
 それぞれの設定がどのように動作するかは後ほど。
 
-## do_parse/6
+## `do_parse/6`
 ```ex
 
 defp do_parse([], _config, opts, args, invalid, _all?) do
@@ -110,15 +108,15 @@ end
 |引数|意味|
 |:----- | :-------------- |
 |argv   | 入力
-|config | compile_flag/1を通して生成された設定（:aliases, :switches, :strict）
+|config | `compile_flag/1`を通して生成された設定（:aliases, :switches, :strict）
 |opts   |パースした結果得られたオプション
 |args   |パースに成功した引数
 |invalid|パースに失敗した引数
-|all?   |bool値。parse/2ならばtrue, parse_head/2ならばfalse
+|all?   |bool値。parse/2ならばtrue, `parse_head/2`ならばfalse
 
-上に書いてある方のdo_parse/6が再帰処理の終了条件です。
+上に書いてある方の`do_parse/6`が再帰処理の終了条件です。
 argvが空の場合に再起終了とし、opts, args, invalidをそれぞれEnum.reverseしてからタプルとして返しています。
-ここでEnum.reverseしているのは、下に記述してあるdo_parse/6でパース結果をリストのheadとして再帰的に処理しているためです。
+ここでEnum.reverseしているのは、下に記述してある`do_parse/6`でパース結果をリストのheadとして再帰的に処理しているためです。
 
 下に書いてあるのがメインの再帰処理です。
 この中では、next/4で実際のパース処理を行いそのパース結果をリストに追加して、再帰処理を実行しています。
@@ -133,7 +131,7 @@ next/４に期待する戻り値は、タプルです。
 
 #### ：okが返ってきた場合
 
-do_store_option/4でオプションを保存して、次の処理へ
+`do_store_option/4`でオプションを保存して、次の処理へ
 
 ```ex
 {:ok, option, value, rest} ->
@@ -148,7 +146,7 @@ do_parse(rest, config, new_opts, args, invalid, all?)
 :keepが指定されていると複数回指定されたオプションをすべて保持します。
 それ以外であれば、重複を許さないため、Kerywordリストから削除しています。
 
-### do_store_option/4
+### `do_store_option/4`
 ```ex
 defp do_store_option(dict, option, value, kinds) do
 cond do
@@ -188,7 +186,7 @@ do_parse(rest, config, opts, args, [{option, nil} | invalid], all?)
 それまでパースしたオプションをそれぞれEnum.reverseして返し終了しています。
 
 二つ目は、それ以外の不正な文字のケースで、その場合は、all?フラグがtrue(parse/2)の場合は続いてパースし、
-それ以外の場合(parse_head/2)はそれまでパースしたオプションをそれぞれEnum.reverseして返し終了しています。
+それ以外の場合(`parse_head/2`)はそれまでパースしたオプションをそれぞれEnum.reverseして返し終了しています。
 
 ```ex
 {:error, ["--" | rest]} ->
@@ -265,7 +263,7 @@ end
 
 パース処理見ていきます。
 
-まず、先頭でsplit_option/1を実行しています。
+まず、先頭で`split_option/1`を実行しています。
 そして、optionの先頭に-をつけたものをoriginalとして保持しています。
 引数のパターンマッチ時に、optionが「-」を除いたものになっているためです。
 
@@ -275,10 +273,10 @@ end
 original = "-" <> option
 ```
 
-split_optionは、以下のように文字列を"="で分割して結果をタプルで返してるだけです
+`split_option`は、以下のように文字列を"="で分割して結果をタプルで返してるだけです
 これは```option=value```の形でもパースができるようにするためです。
 
-```ex:split_option/1
+```ex
 defp split_option(option) do
 case :binary.split(option, "=") do
 [h]    -> {h, nil}
@@ -299,7 +297,8 @@ tag_option/3では、switchesの「--no-xx」オプションと, aliasesのハ�
 
 -no-で始まりかつ、switchesに:booleanが定義されている場合はタグにnegatedつまり、否定とします。
 
-### tag_option/3
+### `tag_option/3`
+
 ```ex
 defp tag_option("-no-" <> option, switches, _aliases) do
 cond do

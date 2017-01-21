@@ -1,15 +1,16 @@
 {{ partial "_header.html" . }}
-{{ partial "_sidebar.html" . }}
+<!-- {{ partial "_sidebar.html" . }} -->
 
 <div class="l-main">
 <article>
     <ul class="l-box-wrap container col3">
-    {{ range first 10 .Data.Pages }}
-        <div class="l-box">
+    {{ range first 20 .Data.Pages }}
+        <li class="l-box">
             <div class="card l-post-item">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              <a href="{{ .RelPermalink }}">
+                  {{ .Title }}</a>
             </div>
-        </div>
+        </li>
    {{ end }}
     </ul>
 
