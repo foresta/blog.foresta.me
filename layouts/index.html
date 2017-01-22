@@ -2,19 +2,27 @@
 <!-- {{ partial "_sidebar.html" . }} -->
 
 <div class="l-main">
-<article>
+  <div class="l-site-header">
+    <div class="l-site-header-inner">
+      <h1 class="site-title">{{ .Site.Title }}</h1>
+      <div class="site-description">{{ .Site.Params.description }}</div>
+    </div>
+  </div>
+
+  <article>
     <ul class="l-box-wrap container col3">
-    {{ range first 20 .Data.Pages }}
-        <li class="l-box">
-            <div class="card l-post-item">
-              <a href="{{ .RelPermalink }}">
-                  {{ .Title }}</a>
-            </div>
+      {{ range first 20 .Data.Pages }}
+      <li class="l-box">
+        <div class="card l-post-item">
+          <div class="post-thumbnail">
+          </div>
+          <div class="post-description">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </div>
         </li>
-   {{ end }}
-    </ul>
-
-</article>
+        {{ end }}
+      </ul>
+    </article>
+  </div>
 </div>
-
 {{ partial "_footer.html" . }}

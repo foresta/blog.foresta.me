@@ -22,13 +22,19 @@ $break-point-tablet: 768px;
 }
 
 @mixin media-sp(){
-  @media screen and (max-width: $break-point-tablet) {
+  @include max-screen($break-point-smartphone) {
+    @content;
+  }
+}
+
+@mixin media-tb() {
+  @include screen($break-point-smartphone, $break-point-tablet) {
     @content;
   }
 }
 
 @mixin media-pc(){
-  @media screen and (min-width: $break-point-tablet) {
+  @include min-screen($break-point-tablet) {
     @content;
   }
 }

@@ -1,42 +1,55 @@
 /*
- * box-layout
- */
+* box-layout
+*/
 
- .l-box {
-    display: block;
-    box-sizing: border-box;
+.l-box {
+  display: block;
+  box-sizing: border-box;
 }
 
- .l-box-wrap {
-    display: flex;
-    flex-wrap: wrap;
+.l-box-wrap {
+  display: flex;
 
-     @include media-sp {
-        flex-direction: column;
-     }
+  flex-wrap: wrap;
 
-     @include media-pc {
+  .l-box {
+    position: relative;
+    > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
 
-        @for $i from 1 through 10 {
-            &.col#{$i} {
-                .l-box {
-                    width: #{(100% / $i)};
-                    position: relative;
-                    > * {
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      bottom: 0;
-                      right: 0;
-                    }
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 80%;
+    }
+  }
 
-                    &:before {
-                        content: "";
-                        display: block;
-                        padding-top: 80%;
-                    }
-                }
-            }
+  @include media-sp {
+      // flex-direction: column;
+      .l-box {
+        width: 100%;
+        height: 250px;
+      }
+  }
+
+  @include media-tb {
+    .l-box {
+      width: 50%;
+    }
+  }
+
+  @include media-pc {
+    @for $i from 1 through 10 {
+      &.col#{$i} {
+        .l-box {
+          width: #{(100% / $i)};
         }
-     }
- }
+      }
+    }
+  }
+}

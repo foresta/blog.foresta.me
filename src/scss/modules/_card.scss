@@ -3,11 +3,10 @@
 //
 
 .card {
-  background-color: $box-color;
   border-radius: 2px;
   @include shadow(2);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  
+
   &:hover {
     @include shadow(8)
   }

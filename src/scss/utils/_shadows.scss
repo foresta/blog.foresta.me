@@ -2,20 +2,6 @@
  * shadows
  */
 
-/***
-$shadow-dialog-dp: 24;
-$shadow-picker-dp: 24;
-$shadow-nav-drawer-dp: 16;
-$shadow-right-drawer-dp: 16;
-$shadow-modal-bottom-sheet-dp: 16;
-
-$shadow-floating-action-button-db: 12;
-$shadow-floating-action-button-db:
-
-$shadow-card-dp: 2;
-$shadow-card-raised-dp: 8;
-***/
-
 $shadow-key-penumbra-opacity: 0.14;
 $shadow-key-umbra-opacity: 0.2;
 $shadow-ambient-shadow-opacity: 0.12;
@@ -56,16 +42,6 @@ $shadow-ambient-shadow-opacity: 0.12;
               0 24px 38px  3px rgba(0, 0, 0, $shadow-key-umbra-opacity),
               0 11px 15px -7px rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
 }
-
-$shadows: (
-    2: "@include shadow-2dp",
-    3: shadow-3dp,
-    4: shadow-4dp,
-    6: shadow-6dp,
-    8: "@include shadow-8dp",
-    16: shadow-16dp,
-    24: shadow-24dp,
-) !default;
 
 @mixin shadow($dp)
 {
