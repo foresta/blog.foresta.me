@@ -14,12 +14,12 @@
       {{ range first 20 .Data.Pages }}
       <li class="l-box">
         <div class="card l-post-item">
-          <div class="post-thumbnail">
-          </div>
-          <div class="post-description">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </div>
-        </li>
+          <a class="post-link" href="{{ .RelPermalink }}">
+            <div class="post-thumbnail"></div>
+          　<div class="post-description">{{ .Title }}</div>
+          </a>
+        </div>
+      </li>
         {{ end }}
       </ul>
     </article>
