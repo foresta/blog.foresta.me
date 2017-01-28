@@ -15,8 +15,16 @@
       <li class="l-box">
         <div class="card l-post-item">
           <a class="post-link" href="{{ .RelPermalink }}">
-            <div class="post-thumbnail"></div>
-            <div class="post-description">{{ .Title }}</div>
+            <div class="post-thumbnail">
+              {{ if .Params.thumbnail }}
+              <img src="/images/{{ .Params.thumbnail }}">
+              {{ else }}
+              <img src="{{ .Site.Params.noimage }}">
+              {{ end }}
+            </div>
+            <div class="post-description">
+              <div class="post-title">{{ .Title }}</div>
+            </div>
           </a>
         </div>
       </li>

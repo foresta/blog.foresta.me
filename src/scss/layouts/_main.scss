@@ -55,24 +55,27 @@
 }
 
 .l-post {
-    position: relative;
-    max-width: 900px;
-    padding: 24px;
-    margin: 8px auto;
+  position: relative;
+  max-width: 900px;
+  padding: 24px;
+  margin: 8px auto;
+  min-height: 200px;
 
-    &.card:hover {
-        @include shadow(2);
-    }
+  background-color: white;
+
+  &.card:hover {
+    @include shadow(2);
+  }
 
 
-    .l-share {
-        position: absolute;
-        top: -28px;
-        right: 20px;
-    }
+  .l-share {
+    position: absolute;
+    top: -28px;
+    right: 20px;
+  }
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
