@@ -12,8 +12,9 @@ $social-btn-px: 45;
   }
 
   .social-btns {
-    li{
-      background-color: #686868;
+    $padding: -132px;
+    
+    li {
       width: $social-btn-close-size;
       height: $social-btn-close-size;
       border-radius: 50%;
@@ -21,6 +22,7 @@ $social-btn-px: 45;
       line-height: $social-btn-size;
 
       margin: auto;
+      color: white;
 
       position: absolute;
       top: 0;
@@ -29,18 +31,20 @@ $social-btn-px: 45;
       bottom: 0;
     }
 
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 2.0rem;
+      line-height: $social-btn-size;
+    }
+
     &.open{
-      $padding: -132px;
 
       li {
         transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         -webkit-transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         width: $social-btn-size;
         height: $social-btn-size;
-
-        a {
-          color: inherit;
-        }
 
         &:hover {
           transition: all 600ms 0s ease;
@@ -49,29 +53,21 @@ $social-btn-px: 45;
 
         &.facebook {
           top: $padding;
-          &:hover {
-            background-color: #3b5999;
-          }
+          background-color:#3b5999; 
         }
         &.pocket {
           left: -132 * 1.732 / 2 + px;
           bottom: -132 / 2 + px;
-          &:hover {
-            background-color: #ee4056;
-          }
+          background-color: #ee4056;
         }
         &.hatena {
           bottom: $padding;
-          &:hover {
-            background-color: #00a4de;
-          }
+          background-color: #00a4de;
         }
         &.twitter {
           left: -132 * 1.732 / 2 + px;
           top: -132 / 2 + px;
-          &:hover {
-            background-color: #55acee; // twitter color
-          }
+          background-color: #55acee; // twitter color
         }
       }
     }
