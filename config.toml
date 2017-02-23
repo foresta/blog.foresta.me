@@ -3,7 +3,8 @@ languageCode = "jp"
 title = "blog.foresta.me"
 
 pygmentsCodeFences = true
-pygmentsOptions = "linenos=table,nobackground=true"
+pygmentsOptions = "nobackground=true"
+pygmentsstyle = "github"
 
 [taxonomies]
 category = "categories"
