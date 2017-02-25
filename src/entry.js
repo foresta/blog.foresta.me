@@ -1,5 +1,6 @@
 import RippleEffect from "./js/RippleEffect"
 import ShareButton  from "./js/ShareButton"
+import SocialShare  from "./js/SocialShare"
 
 require("./scss/style.scss");
 
@@ -11,4 +12,10 @@ Array.from(rippleBtns).forEach((btn) => {
 let shareBtns = document.querySelectorAll(".share-button")
 Array.from(shareBtns).forEach((btn) => {
     new ShareButton(btn)
+})
+
+let socialShare = new SocialShare()
+let socialBtns = document.querySelectorAll(".social-btns li a")
+Array.from(socialBtns).forEach((btn) => {
+    socialShare.attach(btn)
 })
