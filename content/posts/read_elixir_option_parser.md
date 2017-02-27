@@ -1,6 +1,9 @@
 +++
 title = "OptionParserのソースコードを読む"
 date = "2016-06-05"
+
+categories = ["engineering"]
+tags = ["elixir", "advent-calendar"]
 +++
 
 この記事は[Elixir (その2)とPhoenix Advent Calendar 2016](http://qiita.com/advent-calendar/2016/elixir2_and_phoenix) の1９日目の記事です。

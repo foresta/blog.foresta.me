@@ -1,0 +1,35 @@
+{{ partial "_header.html" . }}
+
+<div class="l-main">
+  <div class="l-site-header">
+    <div class="l-site-header-inner">
+      <h1 class="site-title">{{ .Site.Title }}</h1>
+      <div class="site-description">{{ .Site.Params.description }}</div>
+    </div>
+  </div>
+
+  <article>
+    <ul class="l-box-wrap container col3">
+      {{ range first 20 .Data.Pages }}
+      <li class="l-box">
+        <div class="card l-post-item">
+          <a class="post-link" href="{{ .RelPermalink }}">
+            <div class="post-thumbnail">
+              {{ if .Params.thumbnail }}
+              <img src="/images/{{ .Params.thumbnail }}">
+              {{ else }}
+              <img src="{{ .Site.Params.noimage }}">
+              {{ end }}
+            </div>
+            <div class="post-description">
+              <div class="post-title">{{ .Title }}</div>
+            </div>
+          </a>
+        </div>
+      </li>
+        {{ end }}
+      </ul>
+    </article>
+  </div>
+</div>
+{{ partial "_footer.html" . }}

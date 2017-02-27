@@ -1,0 +1,20 @@
+{{ partial "_header.html" . }}
+
+<div class="l-main">
+  <div class="l-site-header">
+    <div class="l-site-header-inner">
+      <h1 class="site-title">{{ .Site.Title }}</h1>
+      <div class="site-description">{{ .Site.Params.description }}</div>
+    </div>
+  </div>
+
+  <h2>Categories:</h2>
+  <ul>
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <li class="l-box">
+      <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ partial "_footer.html" . }}

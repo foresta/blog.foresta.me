@@ -1,14 +1,24 @@
 {{ partial "_header.html" . }}
-<!-- {{ partial "_sidebar.html" . }} -->
 <div class="l-main">
   <div class="l-post-header post-header">
     <div class="container">
       <h1 class="post-header__title">{{ .Title }}</h1>
       <p class="post-header__meta">
         <span class="posts-header__date">{{ .Date }}</span>
+        {{ with .Params.categories }}
         <span class="posts-header__category">
-          <a href="category-url">category</a>
+            {{ range . }}
+            <a class="chips" href="/categories/{{ . }}">{{ . }}</a>
+            {{ end }}
         </span>
+        {{ end }}
+        {{ with .Params.tags }}
+        <span class="post-header__tag">
+          {{ range . }}
+          <a class="chips" href="/tags/{{ . }}/">{{ . }}</a>
+          {{ end }}
+        </span>
+        {{ end }}
       </p>
     </div>
   </div>
