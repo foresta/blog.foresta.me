@@ -70,36 +70,36 @@ end
 ```ex
 
 defp do_parse([], _config, opts, args, invalid, _all?) do
-{Enum.reverse(opts), Enum.reverse(args), Enum.reverse(invalid)}
+  {Enum.reverse(opts), Enum.reverse(args), Enum.reverse(invalid)}
 end
 
 defp do_parse(argv, {aliases, switches, strict}=config, opts, args, invalid, all?) do
-case next(argv, aliases, switches, strict) do
-{:ok, option, value, rest} ->
-# the option exists and it was successfully parsed
-kinds = List.wrap Keyword.get(switches, option)
-new_opts = do_store_option(opts, option, value, kinds)
-do_parse(rest, config, new_opts, args, invalid, all?)
+  case next(argv, aliases, switches, strict) do
+    {:ok, option, value, rest} ->
+      # the option exists and it was successfully parsed
+      kinds = List.wrap Keyword.get(switches, option)
+      new_opts = do_store_option(opts, option, value, kinds)
+      do_parse(rest, config, new_opts, args, invalid, all?)
 
-{:invalid, option, value, rest} ->
-# the option exist but it has wrong value
-do_parse(rest, config, opts, args, [{option, value} | invalid], all?)
+    {:invalid, option, value, rest} ->
+      # the option exist but it has wrong value
+      do_parse(rest, config, opts, args, [{option, value} | invalid], all?)
 
-{:undefined, option, _value, rest} ->
-# the option does not exist (for strict cases)
-do_parse(rest, config, opts, args, [{option, nil} | invalid], all?)
+    {:undefined, option, _value, rest} ->
+      # the option does not exist (for strict cases)
+      do_parse(rest, config, opts, args, [{option, nil} | invalid], all?)
 
-{:error, ["--" | rest]} ->
-{Enum.reverse(opts), Enum.reverse(args, rest), Enum.reverse(invalid)}
+    {:error, ["--" | rest]} ->
+      {Enum.reverse(opts), Enum.reverse(args, rest), Enum.reverse(invalid)}
 
-{:error, [arg | rest] = remaining_args} ->
-# there is no option
-if all? do
-do_parse(rest, config, opts, [arg | args], invalid, all?)
-else
-{Enum.reverse(opts), Enum.reverse(args, remaining_args), Enum.reverse(invalid)}
-end
-end
+    {:error, [arg | rest] = remaining_args} ->
+      # there is no option
+      if all? do
+        do_parse(rest, config, opts, [arg | args], invalid, all?)
+      else
+        {Enum.reverse(opts), Enum.reverse(args, remaining_args), Enum.reverse(invalid)}
+      end
+  end
 end
 ```
 
@@ -135,10 +135,10 @@ next/４に期待する戻り値は、タプルです。
 
 ```ex
 {:ok, option, value, rest} ->
-# the option exists and it was successfully parsed
-kinds = List.wrap Keyword.get(switches, option)
-new_opts = do_store_option(opts, option, value, kinds)
-do_parse(rest, config, new_opts, args, invalid, all?)
+  # the option exists and it was successfully parsed
+  kinds = List.wrap Keyword.get(switches, option)
+  new_opts = do_store_option(opts, option, value, kinds)
+  do_parse(rest, config, new_opts, args, invalid, all?)
 ```
 
 :switchesには、:countと:keepが指定できます。
@@ -149,14 +149,14 @@ do_parse(rest, config, new_opts, args, invalid, all?)
 ### `do_store_option/4`
 ```ex
 defp do_store_option(dict, option, value, kinds) do
-cond do
-:count in kinds ->
-Keyword.update(dict, option, value, & &1 + 1)
-:keep in kinds ->
-[{option, value} | dict]
-true ->
-[{option, value} | Keyword.delete(dict, option)]
-end
+  cond do
+    :count in kinds ->
+      Keyword.update(dict, option, value, & &1 + 1)
+    :keep in kinds ->
+      [{option, value} | dict]
+    true ->
+      [{option, value} | Keyword.delete(dict, option)]
+  end
 end
 ```
 
@@ -166,8 +166,8 @@ invalidリストのheadにoptionとvalueのタプルを詰めて次の処理へ
 
 ```ex
 {:invalid, option, value, rest} ->
-# the option exist but it has wrong value
-do_parse(rest, config, opts, args, [{option, value} | invalid], all?)
+  # the option exist but it has wrong value
+  do_parse(rest, config, opts, args, [{option, value} | invalid], all?)
 ```
 
 #### :undefinedが返ってきた場合
@@ -176,8 +176,8 @@ valueが定義されていないため、invalidリストのheadにoptionとnil�
 
 ```ex
 {:undefined, option, _value, rest} ->
-# the option does not exist (for strict cases)
-do_parse(rest, config, opts, args, [{option, nil} | invalid], all?)
+  # the option does not exist (for strict cases)
+  do_parse(rest, config, opts, args, [{option, nil} | invalid], all?)
 ```
 
 #### :errorが返ってきた場合
@@ -190,15 +190,15 @@ do_parse(rest, config, opts, args, [{option, nil} | invalid], all?)
 
 ```ex
 {:error, ["--" | rest]} ->
-{Enum.reverse(opts), Enum.reverse(args, rest), Enum.reverse(invalid)}
+  {Enum.reverse(opts), Enum.reverse(args, rest), Enum.reverse(invalid)}
 
 {:error, [arg | rest] = remaining_args} ->
-# there is no option
-if all? do
-do_parse(rest, config, opts, [arg | args], invalid, all?)
-else
-{Enum.reverse(opts), Enum.reverse(args, remaining_args), Enum.reverse(invalid)}
-end
+  # there is no option
+  if all? do
+    do_parse(rest, config, opts, [arg | args], invalid, all?)
+  else
+    {Enum.reverse(opts), Enum.reverse(args, remaining_args), Enum.reverse(invalid)}
+  end
 ```
 
 次はnext/4です。
@@ -207,43 +207,43 @@ end
 
 ```ex
 defp next([], _aliases, _switches, _strict) do
-{:error, []}
+  {:error, []}
 end
 
 defp next(["--" | _] = argv, _aliases, _switches, _strict) do
-{:error, argv}
+  {:error, argv}
 end
 
 defp next(["-" | _] = argv, _aliases, _switches, _strict) do
-{:error, argv}
+  {:error, argv}
 end
 
 defp next(["- " <> _ | _] = argv, _aliases, _switches, _strict) do
-{:error, argv}
+  {:error, argv}
 end
 
 defp next(["-" <> option | rest] = argv, aliases, switches, strict) do
-{option, value} = split_option(option)
-original = "-" <> option
-tagged = tag_option(option, switches, aliases)
+  {option, value} = split_option(option)
+  original = "-" <> option
+  tagged = tag_option(option, switches, aliases)
 
-cond do
-negative_number?(original) ->
-{:error, argv}
-strict and not option_defined?(tagged, switches) ->
-{:undefined, original, value, rest}
-true ->
-{option, kinds, value} = normalize_option(tagged, value, switches)
-{value, kinds, rest} = normalize_value(value, kinds, rest, strict)
-case validate_option(value, kinds) do
-{:ok, new_value} -> {:ok, option, new_value, rest}
-:invalid         -> {:invalid, original, value, rest}
-end
-end
+  cond do
+    negative_number?(original) ->
+      {:error, argv}
+    strict and not option_defined?(tagged, switches) ->
+      {:undefined, original, value, rest}
+    true ->
+      {option, kinds, value} = normalize_option(tagged, value, switches)
+      {value, kinds, rest} = normalize_value(value, kinds, rest, strict)
+      case validate_option(value, kinds) do
+        {:ok, new_value} -> {:ok, option, new_value, rest}
+        :invalid         -> {:invalid, original, value, rest}
+      end
+  end
 end
 
 defp next(argv, _aliases, _switches, _strict) do
-{:error, argv}
+  {:error, argv}
 end
 ```
 
@@ -278,10 +278,10 @@ original = "-" <> option
 
 ```ex
 defp split_option(option) do
-case :binary.split(option, "=") do
-[h]    -> {h, nil}
-[h, t] -> {h, t}
-end
+  case :binary.split(option, "=") do
+    [h]    -> {h, nil}
+    [h, t] -> {h, t}
+  end
 end
 ```
 
@@ -301,14 +301,14 @@ tag_option/3では、switchesの「--no-xx」オプションと, aliasesのハ�
 
 ```ex
 defp tag_option("-no-" <> option, switches, _aliases) do
-cond do
-(negated = get_option(option)) && :boolean in List.wrap(switches[negated]) ->
-{:negated, negated}
-option = get_option("no-" <> option) ->
-{:default, option}
-true ->
-:unknown
-end
+  cond do
+    (negated = get_option(option)) && :boolean in List.wrap(switches[negated]) ->
+      {:negated, negated}
+    option = get_option("no-" <> option) ->
+      {:default, option}
+    true ->
+      :unknown
+  end
 end
 ```
 
@@ -316,11 +316,11 @@ end
 
 ```ex
 defp tag_option("-" <> option, _switches, _aliases) do
-if option = get_option(option) do
-{:default, option}
-else
-:unknown
-end
+  if option = get_option(option) do
+    {:default, option}
+  else
+    :unknown
+  end
 end
 
 ```
@@ -329,31 +329,31 @@ end
 
 ```ex
 defp tag_option(option, _switches, aliases) when is_binary(option) do
-opt = get_option(option)
-if alias = aliases[opt] do
-{:default, alias}
-else
-:unknown
-end
+  opt = get_option(option)
+  if alias = aliases[opt] do
+    {:default, alias}
+  else
+    :unknown
+  end
 end
 ```
 
 最後にnext/4の残りの部分です。
 
 ```ex
-cond do
-negative_number?(original) ->
-{:error, argv}
-strict and not option_defined?(tagged, switches) ->
-{:undefined, original, value, rest}
-true ->
-{option, kinds, value} = normalize_option(tagged, value, switches)
-{value, kinds, rest} = normalize_value(value, kinds, rest, strict)
-case validate_option(value, kinds) do
-{:ok, new_value} -> {:ok, option, new_value, rest}
-:invalid         -> {:invalid, original, value, rest}
-end
-end
+  cond do
+    negative_number?(original) ->
+      {:error, argv}
+    strict and not option_defined?(tagged, switches) ->
+      {:undefined, original, value, rest}
+    true ->
+      {option, kinds, value} = normalize_option(tagged, value, switches)
+      {value, kinds, rest} = normalize_value(value, kinds, rest, strict)
+      case validate_option(value, kinds) do
+        {:ok, new_value} -> {:ok, option, new_value, rest}
+        :invalid         -> {:invalid, original, value, rest}
+      end
+  end
 end
 ```
 
@@ -368,19 +368,19 @@ end
 ### normalize_option
 ```ex
 defp normalize_option(:unknown, value, _switches) do
-{nil, [:invalid], value}
+  {nil, [:invalid], value}
 end
 
 defp normalize_option({:negated, option}, value, switches) do
-if value do
-{option, [:invalid], value}
-else
-{option, List.wrap(switches[option]), false}
-end
+  if value do
+    {option, [:invalid], value}
+  else
+    {option, List.wrap(switches[option]), false}
+  end
 end
 
 defp normalize_option({:default, option}, value, switches) do
-{option, List.wrap(switches[option]), value}
+  {option, List.wrap(switches[option]), value}
 end
 ```
 
@@ -389,25 +389,25 @@ end
 ### normalize_value/4
 ```ex
 defp normalize_value(nil, kinds, t, strict) do
-cond do
-:boolean in kinds ->
-{true, kinds, t}
-:count in kinds ->
-{1, kinds, t}
-value_in_tail?(t) ->
-[h | t] = t
-{h, kinds, t}
-kinds == [] and strict ->
-{nil, kinds, t}
-kinds == [] ->
-{true, kinds, t}
-true ->
-{nil, [:invalid], t}
-end
+  cond do
+    :boolean in kinds ->
+      {true, kinds, t}
+    :count in kinds ->
+      {1, kinds, t}
+    value_in_tail?(t) ->
+      [h | t] = t
+      {h, kinds, t}
+    kinds == [] and strict ->
+      {nil, kinds, t}
+    kinds == [] ->
+      {true, kinds, t}
+    true ->
+      {nil, [:invalid], t}
+  end
 end
 
 defp normalize_value(value, kinds, t, _) do
-{value, kinds, t}
+  {value, kinds, t}
 end
 
 defp value_in_tail?(["-" | _]),        do: true

@@ -4,19 +4,34 @@
 .markdown {
 
     color: $text-color;
+
     line-height: 1.8;
     font-size: 1.8rem;
+  
+    @include media-sp {
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
+
 
     h1 {
         margin-top: 4.5rem;
         margin-bottom: 2.0rem;
         font-size: 3.5rem;
+        @include media-sp {
+          font-size: 3.0rem;
+        }
     }
 
     h2 {
         margin-top: 30px;
         margin-bottom: 20px;
         border-bottom: 2px solid #eee;
+
+        font-size: 2.6rem;
+        @include media-sp {
+          font-size: 2.4rem;
+        }
     }
 
     h3 {
@@ -37,6 +52,10 @@
     p {
         margin-top: 2.5rem;
         line-height: 3.0rem;
+        
+        @include media-sp {
+          line-height: 2.5rem;
+        }
     }
 
     li {
@@ -94,54 +113,5 @@
         border-radius: 5px;
         overflow-x: auto;
         line-height: 1.5 !important;
-    }
- 
-    .highlighttable {
-
-       $bg-color: #f7f7f7;
-        pre {
-            margin: 0;
-            padding: 0;
-            background-color: $bg-color;
-            box-shadow: none;
-            overflow-x: auto;
-            width: 100%;
-        }
-
-        td, th { 
-            padding: 0; 
-        }
-
-        td:first-child {
-            width: 30px;
-            background-color: $bg-color;
-        }
-        td:last-child {
-            overflow: scroll;
-        }
-
-        .linenodiv {
-            padding-left: 5px;
-            background-color: $bg-color !important;
-            font-size: 1.4rem;
-
-            * {
-                line-height: 1.5 !important;
-            }
-        }
-
-        font-size: 2.0rem;
-
-        .highlight {
-            padding: 10px;
-            background-color: $bg-color;
-            overflow-x: auto;
-            width: 100%;
-        }
-    
-        width: 100%;
-
-        margin: 20px auto;
-      overflow: scroll;
     }
 }
