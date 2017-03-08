@@ -2,10 +2,17 @@
 @import 'color';
 @import 'font';
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
     background-color: $background-color;
     color: $text-color;
     box-sizing: border-box;
+
+    margin-bottom: 120px; // footer-size + 20px
 
     * {
         box-sizing: inherit;
