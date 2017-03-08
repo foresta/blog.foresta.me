@@ -8,7 +8,11 @@
     </div>
   </div>
 
+  {{ if eq .Data.Singular "category" }}
+  <h2 class="l-list-title container">TOP > {{ .Title }}</h2>
+  {{ else }}
   <h2 class="l-list-title container">{{ .Data.Singular }}:{{ .Title }}</h2>
+  {{ end }}
 
   <article>
     <ul class="l-box-wrap container col3">

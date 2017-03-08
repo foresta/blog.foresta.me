@@ -29,6 +29,7 @@ $social-btn-px: 45;
       right: 0;
       left: 0;
       bottom: 0;
+
     }
 
     a {
@@ -36,6 +37,8 @@ $social-btn-px: 45;
       text-decoration: none;
       font-size: 2.0rem;
       line-height: $social-btn-size;
+      cursor: pointer;
+      display: block;
     }
 
     &.open{
