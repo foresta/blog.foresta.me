@@ -13,7 +13,7 @@
   <ul class="tag-list">
     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
     <li class="l-box">
-      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" class="chips">{{ $name }}</a>
+      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" class="chips"><span class="icon-tag icon inline"></span>{{ $name }}</a>
     </li>
     {{ end }}
   </ul>
