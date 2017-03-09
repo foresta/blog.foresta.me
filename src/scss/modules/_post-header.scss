@@ -30,4 +30,15 @@
 .post-header__date {
 }
 
-.post-header__category {}
+.post-header__category {
+  margin-left: 15px;
+
+  > .category {
+    text-decoration: none;
+    @include link-hover-animation;
+
+    color: white;
+
+    &:after { background-color: white;}
+  }
+}

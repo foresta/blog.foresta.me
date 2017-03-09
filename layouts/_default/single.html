@@ -7,9 +7,9 @@
         <span class="posts-header__date">{{ .Date.Format "2006年1月2日" }}</span>
 
         {{ with .Params.categories }}
-        <span class="posts-header__category">
+        <span class="post-header__category">
             {{ range . }}
-            <a href="/categories/{{ . }}">{{ . }}</a>
+            <a href="/categories/{{ . }}" class="category"><span class="icon-category icon inline"></span>{{ . }}</a>
             {{ end }}
         </span>
         {{ end }}
@@ -17,7 +17,7 @@
         {{ with .Params.tags }}
         <ul class="post-header__tag tag-list">
           {{ range . }}
-          <li><a class="chips" href="/tags/{{ . }}/">{{ . }}</a></li>
+          <li><a class="chips" href="/tags/{{ . }}/"><span class="icon-tag icon inline"></span>{{ . }}</a></li>
           {{ end }}
         </ul>
         {{ end }}

@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon {
+  &.inline {
+    margin-right: 5px;
+  }
+}
+
+.icon-tag:before {
+    content: "\e935";
+}
+.icon-category:before {
+  content: "\e930";
+}
 .icon-github:before {
   content: "\e900";
 }
@@ -39,6 +51,14 @@
 .icon-pocket:before {
   content: "\e904";
 }
+
+
+
+
+
+
+
+
 .icon-embed2:before {
   content: "\ea80";
 }
@@ -102,4 +122,3 @@
 .icon-opera:before {
   content: "\eade";
 }
-

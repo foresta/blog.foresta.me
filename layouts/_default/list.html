@@ -9,9 +9,9 @@
   </div>
 
   {{ if eq .Data.Singular "category" }}
-  <h2 class="l-list-title container">TOP > {{ .Title }}</h2>
+  <h2 class="l-list-title container"><span class="icon-category icon inline"></span>{{ .Title }}</h2>
   {{ else }}
-  <h2 class="l-list-title container">{{ .Data.Singular | humanize }} : {{ .Title }}</h2>
+  <h2 class="l-list-title container"><span class="icon-tag icon inline"></span>{{ .Title }}</h2>
   {{ end }}
 
   <article>
