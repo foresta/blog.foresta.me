@@ -8,13 +8,15 @@
     </div>
   </div>
 
-  <h2>Tags:</h2>
-  <ul>
+  <div class="container">
+  <h2 class="l-list-title">Tags:</h2>
+  <ul class="tag-list">
     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
     <li class="l-box">
-      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" class="chips">{{ $name }}</a>
     </li>
     {{ end }}
   </ul>
+  </div>
 </div>
 {{ partial "_footer.html" . }}

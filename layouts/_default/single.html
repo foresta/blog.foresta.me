@@ -4,20 +4,22 @@
     <div class="container">
       <h1 class="post-header__title">{{ .Title }}</h1>
       <p class="post-header__meta">
-        <span class="posts-header__date">{{ .Date }}</span>
+        <span class="posts-header__date">{{ .Date.Format "2006年1月2日" }}</span>
+
         {{ with .Params.categories }}
         <span class="posts-header__category">
             {{ range . }}
-            <a class="chips" href="/categories/{{ . }}">{{ . }}</a>
+            <a href="/categories/{{ . }}">{{ . }}</a>
             {{ end }}
         </span>
         {{ end }}
+
         {{ with .Params.tags }}
-        <span class="post-header__tag">
+        <ul class="post-header__tag tag-list">
           {{ range . }}
-          <a class="chips" href="/tags/{{ . }}/">{{ . }}</a>
+          <li><a class="chips" href="/tags/{{ . }}/">{{ . }}</a></li>
           {{ end }}
-        </span>
+        </ul>
         {{ end }}
       </p>
     </div>

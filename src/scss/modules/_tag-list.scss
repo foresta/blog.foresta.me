@@ -1,0 +1,15 @@
+/*
+ * tag-list
+ */
+
+.tag-list {
+  margin: 5px;
+
+  > li {
+    display: inline-block;
+    line-height: 35px;
+    margin-left: 4px;
+    &:first-child { margin-left: 0; }
+  }
+}
+

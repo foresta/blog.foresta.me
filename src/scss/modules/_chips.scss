@@ -1,0 +1,22 @@
+/*
+ * chips
+ */
+
+.chips {
+  font-size: 1.3rem;
+  color: #757575;
+  background-color: #e0e0e0;
+  text-decoration: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 20px;
+
+  &:hover {
+    @include shadow(2);
+  }
+  &:active {
+    background-color: #d6d6d6;
+  }
+}
