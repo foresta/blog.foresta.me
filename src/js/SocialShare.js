@@ -25,14 +25,14 @@ export default class SocialShare
         }
 
         btn.addEventListener("click", (e) => {
-            this.open(serviceUrl)
+            this.open(serviceUrl, service)
             return false
         })
     }
 
-    open(url)
+    open(url, service)
     {
-        window.open(url,"_blank")
+        window.open(url, service + 'シェア', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=350');
         return false;
     }
 }
