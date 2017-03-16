@@ -22,9 +22,9 @@
           <a class="post-link" href="{{ .RelPermalink }}">
             <div class="post-thumbnail">
               {{ if .Params.thumbnail }}
-              <img src="/images/{{ .Params.thumbnail }}">
+              <img src="{{ .Site.BaseURL }}/images/{{ .Params.thumbnail }}">
               {{ else }}
-              <img src="{{ .Site.Params.noimage }}">
+              <img src="{{ .Site.BaseURL}}/{{ .Site.Params.noimage }}">
               {{ end }}
             </div>
             <div class="post-description">
