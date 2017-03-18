@@ -14,10 +14,14 @@
     }
 
 
+    /*
+     * header
+     */
     h1 {
         margin-top: 4.5rem;
         margin-bottom: 2.0rem;
         font-size: 3.5rem;
+
         @include media-sp {
           font-size: 3.0rem;
         }
@@ -44,11 +48,9 @@
         margin-bottom: 1.0rem;
     }
 
-    ul, ol {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
+    /*
+     * paragraph
+     */
     p {
         margin-top: 2.5rem;
         line-height: 3.0rem;
@@ -56,6 +58,14 @@
         @include media-sp {
           line-height: 2.5rem;
         }
+    }
+
+    /*
+     * list
+     */
+    ul, ol {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     li {
@@ -76,11 +86,17 @@
         }
     }
 
+    /*
+     * link
+     */
     a {
         text-decoration: none;
         @include link-hover-animation;
     }
 
+    /*
+     * table 
+     */
     table {
         display: table;
         width: 100%;
@@ -105,6 +121,29 @@
         }
     }
 
+    /*
+     * images
+     */
+    figure {
+      max-width: 100%;
+
+      > figcaption {
+        margin: 0 auto;
+
+        * {
+          text-align: center;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    /*
+     * code
+     */
     pre {
         margin: 15px auto;
         padding: 1.2rem;
