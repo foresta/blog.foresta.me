@@ -3,7 +3,7 @@ date = "2015-08-12"
 title = "Homesteadに複数サイトを追加する二つの方法"
 
 categories = ["engineering"]
-tags = ["homemstead", "laravel", "php"]
+tags = ["homestead", "laravel", "php"]
 +++
 
 Homesteadに複数サイト追加するために二つの方法があったのでメモ。

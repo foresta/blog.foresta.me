@@ -3,7 +3,7 @@ date = "2015-07-15"
 title = "Homesteadを使ってLaravel5を動かしてみる"
 
 categories = ["engineering"]
-tags = ["larabel", "homestead", "php"]
+tags = ["laravel", "homestead", "php"]
 +++
 
 PHPerなので、Laravel5を実際にさわってみることにする。
