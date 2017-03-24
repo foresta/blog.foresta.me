@@ -1,8 +1,8 @@
 +++
-date = "2017-03-17T11:04:24+09:00"
+date = "2017-02-10"
 title = "UDPについてまとめてみた"
 
-categories = ["Engineering"]
+categories = ["engineering"]
 tags = ["udp", "ネットワーク"]
 +++
 

@@ -2,7 +2,7 @@
 date = "2015-02-01"
 title = "Swift初心者向け勉強会に行ってきました"
 
-categories = ["Engineering"]
+categories = ["engineering"]
 tags = ["swift", "勉強会"]
 
 +++

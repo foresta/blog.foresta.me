@@ -2,7 +2,7 @@
 date = "2015-02-08"
 title = "WebRTC Conference Japanに行ってきました（2日目）"
 
-categories = ["Engineering"]
+categories = ["engineering"]
 tags = ["WebRTC", "勉強会"]
 +++
 
