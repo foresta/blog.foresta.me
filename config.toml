@@ -14,7 +14,7 @@ tag = "tags"
 [Params]
 author = "kazuki morita"
 description = "日々の開発とかいろいろ"
-noimage = "images/noimage.jpg"
+noimage = "noimage.jpg"
 
 [permalinks]
 posts = "/posts/:filename/"
