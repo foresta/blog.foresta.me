@@ -42,10 +42,7 @@
   padding: 24px;
 
   @include media-sp {
-    padding-top: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 24px;
+    padding: 24px 12px;
   }
 
   position: relative;
