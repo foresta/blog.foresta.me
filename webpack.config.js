@@ -1,8 +1,11 @@
 module.exports = {
-  entry: "./src/entry.js",
+  entry: {
+    entry: "./src/entry.js", 
+    preload: "./src/preload.js"
+  }, 
   output: {
     path: "./static/javascripts",
-    filename: "index.js"
+    filename: "[name].bundle.js"
   },
   module: {
     loaders: [
