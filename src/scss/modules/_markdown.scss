@@ -141,6 +141,7 @@
 
     img {
       max-width: 100%;
+      @include shadow(4);
     }
 
     /*

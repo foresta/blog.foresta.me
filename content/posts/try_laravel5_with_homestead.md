@@ -4,6 +4,7 @@ title = "Homesteadを使ってLaravel5を動かしてみる"
 
 categories = ["engineering"]
 tags = ["laravel", "homestead", "php"]
+thumbnail="/posts/thumbnails/laravel-logo.jpg"
 +++
 
 PHPerなので、Laravel5を実際にさわってみることにする。

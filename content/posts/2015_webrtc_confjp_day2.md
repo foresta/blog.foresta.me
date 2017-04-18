@@ -4,6 +4,7 @@ title = "WebRTC Conference Japanに行ってきました（2日目）"
 
 categories = ["engineering"]
 tags = ["WebRTC", "勉強会"]
+thumbnail="/posts/thumbnails/webrtc-logo.png"
 +++
 
 WebRTC Conference Japanですが２日目も参加してきました。

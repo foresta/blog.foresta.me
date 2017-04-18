@@ -4,6 +4,7 @@ title = "WebRTC Conferrnce JAPANに行ってきました（1日目）"
 
 categories = ["engineering"]
 tags = ["WebRTC", "勉強会"]
+thumbnail="/posts/thumbnails/webrtc-logo.png"
 +++
 
 i以前からなんとなーく興味があったWebRTCという技術ですが、そのカンファレンスが今日（２月５日）行われ、参加してきました。
