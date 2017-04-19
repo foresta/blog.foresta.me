@@ -1,15 +1,29 @@
 <div class="card l-post-item">
   <a class="post-link" href="{{ .RelPermalink }}">
-    <div class="post-thumbnail">
-      {{ if .Params.thumbnail }}
-      <img src="{{ .Site.BaseURL }}images/{{ .Params.thumbnail }}">
-      {{ else }}
-      <img src="{{ .Site.BaseURL }}images/{{ .Site.Params.noimage }}">
-      {{ end }}
+    {{ if .Params.thumbnail }}
+    <div class="thumbnail-item">
+      <div class="post-thumbnail">
+        <img src="{{ .Site.BaseURL }}images/{{ .Params.thumbnail }}">
+      </div>
+      <div class="post-description">
+        <div class="post-meta">
+          <div class="post-meta-date">{{ .Date.Format "2006年1月2日"}}</div>
+        </div>
+        <div class="post-title">{{ .Title }}</div>
+      </div>
     </div>
-    <div class="post-description">
+    {{ else }}
+    <div class="no-thumbnail">
+      <div class="post-meta">
+        <div class="post-meta-date">{{ .Date.Format "2006年1月2日"}}</div>
+      </div>
       <div class="post-title">{{ .Title }}</div>
+      <div class="post-body">
+        {{ .Summary }}
+      </div>
+      <div class="readmore"></div>
     </div>
+    {{ end}}
   </a>
 </div>
  

@@ -1,6 +1,6 @@
 +++
 date = "2015-01-29"
-title = "coocs2d-xでの座標系（getLocationとgetLocationInViewについて）"
+title = "coocs2d-xでの座標系について"
 
 categories = ["engineering"]
 tags = ["cocos2d-x"]
