@@ -9,13 +9,14 @@ export default class SocialShare
         // TODO::シェア数を表示する
         const siteUrl = btn.dataset.url
         const service = btn.dataset.service
+        const title   = btn.dataset.title
 
         var serviceUrl = ""
         if (service == "facebook") {
             serviceUrl = 'https://facebook.com/sharer/sharer.php?u=' + encodeURIComponent(siteUrl)
         }
         if (service == "twitter") {
-            serviceUrl = 'https://twitter.com/share?url=' + encodeURIComponent(siteUrl)
+            serviceUrl = 'https://twitter.com/share?url=' + encodeURIComponent(siteUrl) + '&text=' + encodeURIComponent(title)
         }
         if (service == "pocket") {
             serviceUrl = 'http://getpocket.com/edit?url=' + encodeURIComponent(siteUrl)
