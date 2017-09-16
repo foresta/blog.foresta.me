@@ -6,6 +6,7 @@ title = "blog.foresta.me"
 pygmentsCodeFences = true
 pygmentsOptions = "nobackground=true"
 pygmentsstyle = "github"
+googleAnalytics = "UA-102975147-1"
 
 [taxonomies]
 category = "categories"
