@@ -1,7 +1,6 @@
 +++
 date = "2017-09-26T07:15:27+09:00"
 title = "courseraの機械学習コースを完了した"
-draft=true
 
 tags = ["coursera", "機械学習"]
 +++
@@ -16,21 +15,23 @@ tags = ["coursera", "機械学習"]
 
 終えた感想としては最高で、終えた他の人たちが口々に「とりあえず、courseraのmachine-learningコースやっとけ」って言ってる理由がはっきりわかりました。
 
-いやぁ最高でした。
+控えめに言って最高でした。
 
 
 ## 私のバックグラウンド
 
 * 大学で線形代数・微分方程式などやっていたが、はるか彼方の記憶となっている
 * アプリエンジニアとして、プログラミングしている(C++)
+* 機械学習に関しては何も知らない
 
 ## 事前準備
 
 これの0章,1章,2章をさらっとやりました。
 
+<a target="_blank" href="https://www.amazon.co.jp/gp/product/4274065782/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4274065782&linkCode=as2&tag=foresta04-22&linkId=a08eb9f00b3c6e1bc52f6c68360ddd13"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4274065782&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=foresta04-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=foresta04-22&l=am2&o=9&a=4274065782" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=foresta04-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4274065782&linkId=937f5435fa9c21e84e139dc3273aa958&bc1=ebebeb&lt1=_top&fc1=333333&lc1=0066c0&bg1=ebebeb&f=ifr">
-</iframe>
+<a target="_blank" href="https://www.amazon.co.jp/gp/product/4274065782/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4274065782&linkCode=as2&tag=foresta04-22&linkId=ed1ac6a1a8127f0b41494f1ad7b9bea9">プログラミングのための線形代数</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=foresta04-22&l=am2&o=9&a=4274065782" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
 
 線形代数は大学の講義でもやっていたため、復習の意味と行列を見て吐き気がしないために慣れさせることが目的でした。
 
@@ -76,4 +77,5 @@ tags = ["coursera", "機械学習"]
 courseraのmachine-learningすごく良かったのでぜひ人にすすめたいと思いました。
 英語力や、数学の前提知識があれば理解は用意ですが、そこまでなくてもスイスイすすめられるとは思いました。
 
-最後にこういった無料で講義を受けられる仕組みや講師のAndrewさんには感謝の気持ちでいっぱいでした。
+最後にこういった無料で講義を受けられる仕組みや講師のAndrewさんには感謝の気持ちでいっぱいです。
+ありがとうございましたー。
