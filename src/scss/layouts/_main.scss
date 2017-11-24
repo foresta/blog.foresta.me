@@ -19,6 +19,11 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
+    .logo {
+      vertical-align: top; 
+      line-height: 6.0rem; 
+    }
+
     .site-title {
       color: white;
       text-align: center;
@@ -26,6 +31,7 @@
       letter-spacing: 0.2rem;
       font-weight: 100;
       margin-bottom: 10px;
+      display: inline-block;
 
       @include media-sp {
         font-size: 4.0rem;

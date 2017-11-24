@@ -13,9 +13,14 @@
   width: 100%;
   z-index: 99;
 
-  .logo{
-    width: 200px;
+  .title{
+    width: 300px;
     text-align: center;
+
+    .logo {
+      vertical-align: middle;
+      margin-right: 3px;
+    }
 
     a {
         text-decoration: none;
