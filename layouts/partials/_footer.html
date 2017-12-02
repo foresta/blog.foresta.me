@@ -1,6 +1,9 @@
     <footer class="l-footer"></footer>
     <script type="text/javascript" src="/javascripts/entry.bundle.js" charset="utf-8"></script>
     {{ partial "_mathjax.html" . }}
-    {{ template "_internal/google_analytics_async.html" . }}
+
+    {{ if ne (printf "%v" .Site.BaseURL) "http://localhost:1313/" }}
+      {{ template "_internal/google_analytics_async.html" . }} 
+    {{ end }}
 </body>
 </html>
