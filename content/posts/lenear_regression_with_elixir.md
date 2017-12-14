@@ -39,35 +39,72 @@ Elixirはサンプルアプリや簡単なツールを制作した程度、機�
 
 ## 学習データ
 
-今回学習には以下のリポジトリにあるデータセットを使用しました。
+今回学習には以下のデータセットを使用しました。
 
-https://github.com/scikit-learn/scikit-learn
+* [linnerud\_physiological.csv](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/datasets/data/linnerud_physiological.csv)
+* [linnerud\_exercise.scv](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/datasets/data/linnerud_exercise.csv)
 
-実際に使用したのは以下の二つのデータです。
+linnerud\_physiological.csvには体重・ウエスト・心拍数のデータが、
+linnerud\_exerciseには懸垂・腹筋・跳躍に関するデータがあります。
 
-```
-sklearn/datasets/data/linnerud_exercise.csv
-sklearn/datasets/data/linnerud_physiological.csv
-```
-
-// TODO::学習データを軽く説明
-
+今回は身体的特徴と、懸垂のデータで線形回帰をしてみます。
 
 
 ## 実装
 
-線形回帰を実装するにあたり以下の数式を実装していきます。
+mles/apps/sample/lib/linnerud.ex
+
+```
+def run do
+  # load dataset
+  features = load_linnerud_feature_dataset()
+  targets = load_linnerud_target_dataset()
+
+  # setup features
+  pulses = features[:pulse]
+  waists = features[:waist]
+  weights = features[:weight]
+  number_of_data = length pulses
+  bias = for _times <- 1..number_of_data, do: 1.0
+
+  x = [bias, weights, waists, pulses]
+  x = Matrix.transpose(x)
+
+  # setup targets
+  y = [ targets[:chins] ]
+  y = Matrix.transpose(y)•
+
+  # setup gradientDescent params 
+  alpha = 0.00003
+  iterations = 10000
+  theta = [[0], [0], [0], [0]]
+
+  # train
+  theta = LenearRegression.gradientDescent(x, y, theta, alpha, iterations)
+  # test
+  x_test = [[1],[191],[36],[50]]
+
+  # predict
+  predicted_chins = LenearRegression.predict(Matrix.transpose(x_test), theta)
+
+  # conpute cost
+  predicted_chins
+end
+```
+
+
+線形回帰を実装するにあたり以下の数式を実装しました。
 
 ### 仮説関数
 
 線形モデルを表す関数です。
 
-
 $$
 h\_{\theta}(x) = \theta\_{0}x\_{0} + \theta\_{1}x\_{1} + \cdots + \theta\_{n}x\_{n} = \theta^{T}x
 $$
 
-コスト関数
+### コスト関数
+実際の仮説関数の結果と、実際のデータとの間の誤差
 
 $$
 J(\theta) = \frac{1}{2m}\sum\_{i=1}^{m}(h\_{\theta}(x^{(i)}) - y^{(i)})^{2}
@@ -85,9 +122,8 @@ $$
 
 ## まとめ
 
-Elixirで線形回帰のアルゴリズムを
-
-
-
-
+* Elixirで線形回帰のアルゴリズムを書いてみた
+* ロジックはかけることはかける
+* 大量のデータセットでも実用的かは要検証
+* Elixir楽しい
 
