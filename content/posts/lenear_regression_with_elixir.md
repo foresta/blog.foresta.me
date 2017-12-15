@@ -1,8 +1,8 @@
 +++
 date = "2017-12-02T11:37:32+09:00"
 title = "Elixirで線形回帰してみた"
-draft = true
-
+tags = ["elixir", "機械学習"]
+categories = ["engineering"]
 +++
 
 この記事は[Elixir Advent Calendar 2017](https://qiita.com/advent-calendar/2017/elixir)の17日目の記事です。
@@ -193,7 +193,7 @@ iex(2)>
 Elixirふわりとしか触っていなかったのですが、アルゴリズムの実装は割とサクサクでき非常に触りごごちの良い言語だなぁと改めて実感しました。
 
 Elixirは書いてて楽しいので、他のアルゴリズムやアプリケーションなどもっと
-書いていきたいですね。
+書いていきたいと思いました。
 
 ---
 * Elixirで線形回帰のアルゴリズムを書いてみた
