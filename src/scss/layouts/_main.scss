@@ -9,7 +9,6 @@
 
 .l-site-header {
   width: 100%;
-  height: 200px;
   background-color: $main-color;
   margin-bottom: 20px;
   position: relative;
@@ -17,7 +16,7 @@
 
   .l-site-header-inner {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 
     .logo {
       vertical-align: top; 
