@@ -5,5 +5,12 @@
     {{ if ne (printf "%v" .Site.BaseURL) "http://localhost:1313/" }}
       {{ template "_internal/google_analytics_async.html" . }} 
     {{ end }}
+
+
+  <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+    }
+  </script>
 </body>
 </html>
