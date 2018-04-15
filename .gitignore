@@ -14,4 +14,5 @@ cover.out
 public/
 static/javascripts
 static/stylesheets
+static/manifest.*
 node_modules/

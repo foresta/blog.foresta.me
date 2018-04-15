@@ -2,11 +2,11 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 module.exports = {
   entry: {
-    entry: "./src/entry.js", 
-    preload: "./src/preload.js"
+    "javascripts/entry": "./src/entry.js", 
+    "javascripts/preload": "./src/preload.js",
   },
   output: {
-    path: "./static/javascripts",
+    path: "./static",
     filename: "[name].bundle.js"
   },
   module: {
