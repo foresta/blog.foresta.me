@@ -15,4 +15,5 @@ public/
 static/javascripts
 static/stylesheets
 static/manifest.*
+static/icon_*
 node_modules/
