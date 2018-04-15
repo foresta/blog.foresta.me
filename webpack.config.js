@@ -1,5 +1,3 @@
-const WebpackPwaManifest = require('webpack-pwa-manifest');
-
 module.exports = {
   entry: {
     "javascripts/entry": "./src/entry.js", 
@@ -25,29 +23,5 @@ module.exports = {
   },
   resolve: {
     extensions: ["", ".js", ".json", ".jsx"]
-  },
-  plugins: [
-    new WebpackPwaManifest({
-        name: "foresta's blog",
-        icons: [
-        {
-            "src": "static/images/logo/logo-96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        }, {
-            "src": "static/images/logo/logo-144.png",
-            "sizes": "144x144",
-            "type": "image/png"
-        },{
-            "src": "static/images/logo/logo-192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        }
-        ],
-        short_name: "foresta",
-        description: "foresta's developer blog",
-        background_color: '#61c0ca',
-        start_url: "/"
-    })
-  ]
+  }
 };
