@@ -29,10 +29,25 @@ module.exports = {
   plugins: [
     new WebpackPwaManifest({
         name: "foresta's blog",
-        icons: [],
+        icons: [{
+            "src": "/images/logo/logo-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/logo/logo-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/logo/logo-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }],
         short_name: "foresta",
         description: "foresta's developer blog",
-        background_color: '#61c0ca'
+        background_color: '#61c0ca',
+        start_url: '/'
     })
   ]
 };
