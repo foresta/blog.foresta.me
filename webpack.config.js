@@ -1,8 +1,10 @@
+const WebpackPwaManifest = require('webpack-pwa-manifest');
+
 module.exports = {
   entry: {
     entry: "./src/entry.js", 
     preload: "./src/preload.js"
-  }, 
+  },
   output: {
     path: "./static/javascripts",
     filename: "[name].bundle.js"
@@ -23,5 +25,14 @@ module.exports = {
   },
   resolve: {
     extensions: ["", ".js", ".json", ".jsx"]
-  }
+  },
+  plugins: [
+    new WebpackPwaManifest({
+        name: "foresta's blog",
+        icons: [],
+        short_name: "foresta",
+        description: "foresta's developer blog",
+        background_color: '#61c0ca'
+    })
+  ]
 };
