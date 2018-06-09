@@ -1,27 +1,29 @@
+const path = require('path')
+
 module.exports = {
   entry: {
     "javascripts/entry": "./src/entry.js", 
     "javascripts/preload": "./src/preload.js",
   },
   output: {
-    path: "./static",
+    path: path.resolve(__dirname, "static"),
     filename: "[name].bundle.js"
   },
   module: {
-    loaders: [
+      rules: [
       {
         test: /\.js$/,
         loader: "babel-loader",
-        query: {
+        options: {
           presets: ["es2015"]   
         }
       },
       { test: /\.css$/, loader: "style!css" },
-      { test: /\.scss$/, loaders: ["style", "css", "sass"] },
-      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
+      { test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"] },
+      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: 'url-loader?limit=100000' }
     ]
   },
   resolve: {
-    extensions: ["", ".js", ".json", ".jsx"]
+    extensions: [".js", ".json", ".jsx"]
   }
 };
