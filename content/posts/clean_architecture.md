@@ -5,7 +5,6 @@ date = "2018-08-30T21:08:40+09:00"
 title = "書籍「Clean Architecture」を読んだまとめ"
 categories = ["engineering"]
 
-draft=true
 
 +++
 
