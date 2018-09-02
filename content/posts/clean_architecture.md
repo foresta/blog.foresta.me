@@ -1,7 +1,7 @@
 +++
 thumbnail = ""
 tags = ["architecture"]
-date = "2018-08-30T21:08:40+09:00"
+date = "2018-09-02T21:09:50+09:00"
 title = "書籍「Clean Architecture」を読んだまとめ"
 categories = ["engineering"]
 
