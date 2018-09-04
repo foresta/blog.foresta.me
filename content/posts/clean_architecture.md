@@ -1,11 +1,9 @@
 +++
+date = "2018-09-02"
 thumbnail = ""
 tags = ["architecture"]
-date = "2018-09-02T21:09:50+09:00"
 title = "書籍「Clean Architecture」を読んだまとめ"
 categories = ["engineering"]
-
-
 +++
 
 普段からソフトウェアの設計やアーキテクチャに関心があり色々調べていたのですが、
