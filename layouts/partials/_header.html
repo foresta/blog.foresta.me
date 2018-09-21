@@ -2,6 +2,7 @@
 {{ with .Site.LanguageCode }}<html lang="{{ . }}">{{ else }}<html>{{ end }}
 <head>
   <meta charset="utf-8">
+  {{ partial "_seo_schema" . }}
   <title>{{ .Title }}</title>
   <meta name="description" content="{{ .Site.Params.description }}">
   <meta name="author" content="{{ .Site.Params.author }}">

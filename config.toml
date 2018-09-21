@@ -3,6 +3,8 @@ languageCode = "jp"
 countryCode = "ja"
 title = "blog.foresta.me"
 
+enableRobotsTXT = true
+canonifyurls = true
 pygmentsCodeFences = true
 pygmentsOptions = "nobackground=true"
 pygmentsstyle = "github"
