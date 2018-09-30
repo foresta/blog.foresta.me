@@ -3,8 +3,7 @@ title = "Elmに入門してみた その2"
 thumbnail = ""
 tags = ["elm"]
 categories = ["engineering"]
-date = "2018-09-23"
-draft = true
+date = "2018-09-30"
 +++
 
 Elmに入門してみましたのでそのメモです。\
