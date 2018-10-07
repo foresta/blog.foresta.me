@@ -1,12 +1,9 @@
 +++
 thumbnail = ""
 tags = ["cocos2d-x"]
-date = "2018-09-02"
+date = "2018-10-07"
 title = "Cocos2d-xのActionまとめ 基本編"
 categories = ["engineering"]
-
-draft=true
-
 +++
 
 Cocos2d-xでアニメーションを行うのによく用いるActionクラスをまとめました。
