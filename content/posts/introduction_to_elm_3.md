@@ -145,7 +145,7 @@ init =
   0
 ```
 
-このサンプルでは、シンプルな数値をModelとして扱うため、`type alias`を仕様しています。\
+このサンプルでは、シンプルな数値をModelとして扱うため、`type alias`を使用しています。\
 initはModelの初期状態を返す関数です。
 `Browser.sandbox` に引数として渡されます。
 
