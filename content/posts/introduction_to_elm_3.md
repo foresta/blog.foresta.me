@@ -3,9 +3,7 @@ title = "Elmに入門してみた その3"
 thumbnail = ""
 tags = ["elm"]
 categories = ["engineering"]
-date = "2018-09-30"
-
-draft = true
+date = "2018-10-14"
 
 +++
 
@@ -227,7 +225,7 @@ The Elm Architectureの概要を把握するために、簡単なアプリのソ
 (一緒にまとめようと思ったが体力が尽きた)
 
 
-最後に、Elm楽しいので引き続き触っていこうと思いますー。
+最後に、Elm楽しいので引き続きまったり触っていこうと思いますー。
 
 
 ## 参考にしたサイト
