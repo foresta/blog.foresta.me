@@ -4,9 +4,6 @@ thumbnail = ""
 tags = ["parcel", "javascript", "sass", "html"]
 categories = ["engineering"]
 date = "2018-10-21"
-
-draft=true
-
 +++
 
 ## 背景
