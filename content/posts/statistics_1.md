@@ -1,6 +1,6 @@
 +++
 categories = ["mathematics"]
-date = "2018-10-23T09:00:35+09:00"
+date = "2018-10-28T09:00:35+09:00"
 title = "記述統計学と推測統計学"
 thumbnail = ""
 tags = ["statistics"]
