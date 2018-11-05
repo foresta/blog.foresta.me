@@ -1,11 +1,9 @@
 +++
 categories = ["mathematics"]
-date = "2018-10-25T09:00:35+09:00"
+date = "2018-11-05T09:00:35+09:00"
 title = "記述統計学とデータについて"
 thumbnail = ""
 tags = ["statistics"]
-
-draft = true
 +++
 
 [前回の記事](/posts/statistics_1)では記述統計学と推測統計学の違いについて簡単に紹介しました。
