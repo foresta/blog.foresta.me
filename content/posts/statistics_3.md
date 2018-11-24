@@ -3,7 +3,7 @@ categories = ["mathematics"]
 date = "2018-11-17T09:00:35+09:00"
 title = "度数分布表とヒストグラム"
 thumbnail = ""
-tags = ["statistics", "python", "pandas", "data analysis"]
+tags = ["statistics", "python", "pandas", "data-analysis"]
 +++
 
 データを統計学ではどの様に見て行くのかをまとめます。\

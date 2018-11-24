@@ -3,7 +3,7 @@ categories = ["mathematics"]
 date = "2018-11-17T09:00:35+09:00"
 title = "データの代表値について"
 thumbnail = ""
-tags = ["statistics", "python", "pandas", "numpy", "scikit-learn", "scipy", "data analysis"]
+tags = ["statistics", "python", "pandas", "numpy", "scikit-learn", "scipy", "data-analysis"]
 +++
 
 データの集合を見るときにどの様な傾向があるのか、またデータ集合同士を比較などしたいときに、用いられるのが代表値です。
