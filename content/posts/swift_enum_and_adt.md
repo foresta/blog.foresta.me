@@ -1,5 +1,5 @@
 +++
-categories = ["mathematics"]
+categories = ["engineering"]
 date = "2018-12-06T09:00:35+09:00"
 title = "SwiftのEnumと代数的データ型"
 thumbnail = ""
