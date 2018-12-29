@@ -377,7 +377,7 @@ case ParseResult::Operand:
 }
 ```
 
-不正な文字出会った場合は例外をthrowします。
+不正な文字であった場合は例外をthrowします。
 
 ```cpp
 case ParseResult::Invalid:
