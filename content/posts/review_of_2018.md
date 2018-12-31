@@ -1,6 +1,6 @@
 +++
 categories = ["Engineering"]
-date = "2018-12-31T09:00:35+09:00"
+date = "2019-01-01"
 title = "2018年のふりかえりと2019年に向けて"
 thumbnail = ""
 tags = []
