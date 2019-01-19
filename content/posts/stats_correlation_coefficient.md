@@ -1,6 +1,6 @@
 +++
 categories = ["mathematics"]
-date = "2018-11-24T09:00:35+09:00"
+date = "2019-01-19"
 title = "相関係数について"
 thumbnail = ""
 tags = ["statistics"]
