@@ -75,13 +75,13 @@ $HOME/.config/nvim/
 ```
 
 init.vimにnvim初期化用のスクリプトをいれています。
-今回に関係するところでいうとまず、init.vimのプラグイン周りは以下のようになっています。
+今回に関係するところでいうとまず、nit.vimのプラグイン周りは以下のようになっています。
 パッケージマネージャはdeinを用いています。
 
 プラグイン周りの設定は以下のような感じ
 
 #### init.vim
-```init.vim
+```vim
 " ===========
 " Plugins
 " ===========
@@ -124,7 +124,7 @@ filetype plugin indent on
 dein.tomlは以下のような感じ、LSPに関係しそうなところのみ抜き出してますが最低限このくらいで大丈夫なはずです。
 
 #### dein.toml
-```dein.toml
+```toml
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
@@ -167,12 +167,12 @@ source ~/.config/nvim/plugins/rust.rc.vim
 ```
 
 #### rust.rc.vim
-```rust.rc.vim
+```vim
 let g:rustfmt_autosave = 1
 ```
 
 #### deoplete.rc.vim
-```deoplete.rc.vim
+```vim
 " options
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_complete_delay = 0
@@ -187,7 +187,7 @@ let g:deoplete#max_list = 10000
 ```
 
 #### neosnippet.rc.vim
-```neosnippet.rc.vim
+```vim
 let g:neosnippet#snippets_directory = '~/.config/nvim/snippets'
 let g:neosnippet#enable_snipmate_compatibility = 1
 
@@ -210,7 +210,7 @@ endif
 * `Space + lr` でリネーム
 * `Space + lf` でフォーマット
 
-```LanguageClient-neovim.rc.vim
+```vim
 set hidden
 
 " settings for languages
