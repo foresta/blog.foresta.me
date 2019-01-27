@@ -124,7 +124,7 @@ filetype plugin indent on
 dein.tomlは以下のような感じ、LSPに関係しそうなところのみ抜き出してますが最低限このくらいで大丈夫なはずです。
 
 #### dein.toml
-```toml
+```
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
