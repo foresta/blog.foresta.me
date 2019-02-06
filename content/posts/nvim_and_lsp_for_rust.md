@@ -237,9 +237,10 @@ nnoremap <silent> <Space>lf :call LanguageClient_textDocument_formatting()<CR>
 
 とりあえず、neovimでRustの補完・定義ジャンプ・ドキュメント参照・リネーム・フォーマットができるようになりました。これで開発がはかどるはずです。
 
-今回は設定ファイルなどをただ列挙しているだけなので、もしわからないこと等あればお気軽に聞いていただければと思います。([@kz_morita](https://twitter.com/kz_morita))
+今回は設定ファイルなどをただ列挙しているだけなので、もしわからないこと等あればお気軽に聞いていただければと思います。
+{{< exlink href="https://twitter.com/kz_morita" text="@kz_morita" >}}
 
 ## 参考サイト
 
-http://wheson-prog.hatenablog.jp/entry/2018/06/05/141730
-https://muunyblue.github.io/48dd34fa4a5fc8e0045aba1952e1818e.html
+{{< exlink "http://wheson-prog.hatenablog.jp/entry/2018/06/05/141730" >}}
+{{< exlink "https://muunyblue.github.io/48dd34fa4a5fc8e0045aba1952e1818e.html" >}}
