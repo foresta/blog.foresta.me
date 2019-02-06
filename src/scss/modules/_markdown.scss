@@ -9,8 +9,8 @@
     font-size: 1.8rem;
   
     @include media-sp {
-      font-size: 1.6rem;
-      line-height: 1.6;
+      font-size: 1.5rem;
+      line-height: 1.5;
     }
 
     /*
@@ -36,7 +36,7 @@
 
         font-size: 2.6rem;
         @include media-sp {
-          font-size: 2.4rem;
+          font-size: 2.2rem;
         }
     }
 
@@ -46,6 +46,12 @@
         padding-left: 7px;
 
         border-left: 3px solid $main-color;
+
+        font-size: 2.4rem;
+        @include media-sp {
+          margin-top: 20px;
+          font-size: 2.0rem;
+        }
     }
 
     h4, h5, h6 {
@@ -58,10 +64,10 @@
      */
     p {
         margin-top: 2.0rem;
-        line-height: 3.0rem;
+        line-height: 2.9rem;
         
         @include media-sp {
-          line-height: 2.5rem;
+          line-height: 2.3rem;
         }
     }
 
@@ -186,10 +192,33 @@
     pre {
         margin: 15px auto;
         padding: 1.2rem;
-        font-size: 1.8rem;
         background-color: #f4f4f4;
         border-radius: 5px;
         overflow-x: auto;
         line-height: 1.5 !important;
+
+        code {
+          background-color: #ffffff00;
+          font-weight: normal;
+          font-size: inherit;
+          padding: 0;
+          margin: 0;
+        }
     }
+
+    code {
+        background-color: #f4f4f4;
+        border-radius: 3px;
+        margin: 0 2px;
+        padding: 3px 5px;
+        font-weight: bold;
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+        @include media-sp {
+          font-size: 1.6rem;
+        }
+    }
+
 }
+
+
