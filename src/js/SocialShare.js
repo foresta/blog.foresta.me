@@ -22,7 +22,7 @@ export default class SocialShare
             serviceUrl = 'http://getpocket.com/edit?url=' + encodeURIComponent(siteUrl)
         }
         if (service == "hatebu") {
-            serviceUrl = 'http://b.hatena.ne.jp/entry/https://' + siteUrl
+            serviceUrl = 'http://b.hatena.ne.jp/entry/' + siteUrl
         }
 
         btn.addEventListener("click", (e) => {
