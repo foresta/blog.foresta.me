@@ -1,5 +1,5 @@
 +++
-title = "確率分布"
+title = "確率変数と確率分布"
 thumbnail = ""
 tags = ["statistics"]
 categories = ["mathematics"]
