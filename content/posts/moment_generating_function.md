@@ -3,9 +3,7 @@ title = "モーメントとモーメント母関数"
 thumbnail = ""
 tags = ["statistics"]
 categories = ["mathematics"]
-date = "2019-02-17"
-
-draft = true
+date = "2019-02-22"
 +++
 
 確率分布におけるモーメントとモーメント母関数についてまとめます。
