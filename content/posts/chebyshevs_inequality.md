@@ -1,6 +1,6 @@
 +++
 categories = ["mathematics"]
-date = "2019-02-23"
+date = "2019-02-24"
 title = "チェビシェフの不等式"
 thumbnail = ""
 tags = ["statistics"]
