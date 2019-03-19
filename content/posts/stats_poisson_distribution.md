@@ -1,12 +1,9 @@
 +++
 categories = ["mathematics"]
-date = "2019-03-18"
+date = "2019-03-19"
 title = "ポアソン分布"
 thumbnail = ""
 tags = ["statistics"]
-
-draft = true
-
 +++
 
 ## はじめに
@@ -107,7 +104,76 @@ $$
 
 ポアソン分布のモーメント母関数を求めてみます。
 
+$$
+M\_X (t) = E(e^{tX})
+$$
+$$
+E(X) = \sum\_x x\ f(x)
+$$
+
+より、ポアソン分布のモーメント母関数は、
+
+$$
+M\_X (t) = \sum\_x e^{tx} \cdot \frac{\lambda^x}{x!} e^{-\lambda}
+$$
+$$
+ = e^{-\lambda} \sum\_x \frac{ (e^t \lambda)^x}{x!}
+$$
+
+ここで、マクローリン展開
+$$
+e^x = \sum\_k \frac{x^k}{k!} 
+$$
+を利用すると、
+
+$$
+M\_X (t) = e^{-\lambda} e^{e^t \lambda} = e^{ \lambda(e^t - 1)}
+$$
+
+これから、
+
+$$
+M\_X' (t) = \lambda e^t e^{ \lambda(e^t - 1)}
+$$
+
+$$
+M\_X (0) = \lambda
+$$
+
+$$
+M\_X'' (t) = \lambda e^t \cdot \lambda e^t e^{ \lambda(e^t - 1)} + \lambda e^t e^{ \lambda(e^t - 1)} = \lambda e^t (1 + \lambda e^t) \ e^{\lambda (e^t - 1)}
+$$
+
+$$
+M\_X'' (0) = \lambda \ (1 + \lambda) 
+$$
+
+となります。
 
 ### 期待値
 
+上記のモーメント母関数から期待値を算出すると以下のようになります。
+
+$$
+E(X) = M\_X' (0) = \lambda
+$$
+
 ### 分散
+
+期待値と同様にモーメント母関数から算出すると以下のようになります。
+
+$$
+V(X) = E(X^2) - E(X) ^2 \ \ \ \ \ \ \ 
+$$
+$$
+\ \ \ \ \  = M\_X'' (0) - M\_X' (0) ^2
+$$
+$$
+ \ \ \ \ \  = \lambda\ (1 + \lambda) - \lambda^2 = \lambda
+$$
+
+## まとめ
+
+今回は期待値と分散が同じ $\lambda$ なのが特徴的なポアソン分布を紹介し、その二項分布との関係を示しました。
+そしてモーメント母関数から期待値と分散を導出をしてみました。
+
