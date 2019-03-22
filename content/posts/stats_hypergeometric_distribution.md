@@ -1,7 +1,7 @@
 +++
 categories = ["mathematics"]
 date = "2019-03-10"
-title = "確率分布 ~超幾何分布~"
+title = "超幾何分布"
 thumbnail = ""
 tags = ["statistics"]
 +++
