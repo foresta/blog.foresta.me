@@ -1,6 +1,6 @@
 
 
-@mixin link-hover-animation {
+@mixin link-hover-animation($color: $link-color) {
     display: inline-block;
     &:hover, &:focus {
         &:after{
@@ -14,7 +14,7 @@
         content: "";
         height: 1px;
         width: 0%;
-        background-color: $link-color;
+        background-color: $color;
         transition: width 0.5s ease;
     }
 }

@@ -1,10 +1,38 @@
 .l-footer {
-    height: 100px;
-    width: 100%;
-    padding: 0 16px;
-    background-color: $sub-color;
-    margin-top: 20px;
+  height: $footer-height;
+  width: 100%;
+  padding: 70px 16px 0px;
+  background-color: $sub-color;
+  margin-top: 20px;
 
-   position: absolute;
-   bottom: 0;
+  position: absolute;
+  bottom: 0;
+
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    @include link-hover-animation($text-darkbg-subcolor);
+  }
+
+  @include media-pc {
+    font-size: 1.6rem;
+  }
+
+  @include media-tb {
+    font-size: 1.4rem;
+  }
+
+  @include media-sp {
+    font-size: 1.2rem;
+  }
+
+  .privacy {
+    color: $text-darkbg-subcolor;
+  }
+
+	.copyright {
+    margin-top: 5px;
+		color: $text-darkbg-subcolor;
+	}
 }

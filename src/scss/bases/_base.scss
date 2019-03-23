@@ -1,6 +1,7 @@
-@import 'reset';;
+@import 'reset';
 @import 'color';
 @import 'font';
+@import 'size';
 
 html {
   min-height: 100%;
@@ -15,7 +16,7 @@ body {
     -webkit-text-size-adjust: 100%;
 
 
-    margin-bottom: 120px; // footer-size + 20px
+    margin-bottom: $footer-height + $footer-margin;
 
     * {
         box-sizing: inherit;
