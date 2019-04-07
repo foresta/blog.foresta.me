@@ -10,18 +10,20 @@
 
   {{ if eq .Data.Singular "category" }}
   <h2 class="l-list-title container"><span class="icon-category icon inline"></span>{{ .Title }}</h2>
-  {{ else }}
+  {{ else if eq .Data.Singular "tag" }}
   <h2 class="l-list-title container"><span class="icon-tag icon inline"></span>{{ .Title }}</h2>
   {{ end }}
 
   <article>
     <ul class="l-box-wrap container col3">
-      {{ range first 20 .Data.Pages }}
+      {{ $paginator := .Paginate (where .Data.Pages "Section" "posts") 24 }}
+      {{ range $paginator.Pages }}
       <li class="l-box">
         {{ partial "_list-item.html" . }}
       </li>
       {{ end }}
     </ul>
   </article>
+  {{ partial "_paginator.html" . }}
 </div>
 {{ partial "_footer.html" . }}
