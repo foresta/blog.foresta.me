@@ -1,0 +1,28 @@
+{{ $page := $.Paginator }}
+
+{{ if gt $page.TotalPages 1 }}
+  <ul class="pagination">
+    {{ if $page.HasPrev }}
+    <li>
+      <a href="{{ $page.Prev.URL }}" class="icon-arrow-left floating-action-btn"></a>
+    </li>
+    {{ else }}
+    <li class="disabled">
+      <span class="icon-arrow-left floating-action-btn"></span>
+    </li>
+    {{ end }}
+
+    <li>{{ $page.PageNumber }} / {{ $page.TotalPages }}</li> 
+
+    {{ if $page.HasNext }}
+    <li>
+      <a href="{{ $page.Next.URL }}" class="icon-arrow-right floating-action-btn"></a>
+    </li>
+    {{ else }}
+    <li class="disabled">
+      <span class="icon-arrow-right floating-action-btn"></span>
+    </li>
+    {{ end }}
+  </ul>
+
+{{ end }}

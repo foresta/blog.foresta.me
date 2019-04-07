@@ -9,9 +9,15 @@ $floating-btn-mini: 40px;
     display: block;
     width: $floating-btn-normal;
     height: $floating-btn-normal;
+    line-height: $floating-btn-normal;
     border-radius: 50%;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,.14),0 6px 2px -4px rgba(0,0,0,.2),0 2px 10px 0 rgba(0,0,0,.12);
     text-align: center;
+
+    @include shadow(4);
+
+    &:hover, &:focus {
+      @include shadow(6);
+    }
 
     &.main {
         background-color: $main-color;
@@ -31,6 +37,7 @@ $floating-btn-mini: 40px;
     &.mini {
         width: $floating-btn-mini;
         height: $floating-btn-mini;
+        line-height: $floating-btn-mini;
         i {
             line-height: $floating-btn-mini;
             font-size: 2.4rem;

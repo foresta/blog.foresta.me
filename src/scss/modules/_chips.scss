@@ -18,10 +18,11 @@
   color: #757575;
   background-color: #e0e0e0;
 
-  &:hover {
+  &:hover, &:focus {
     @include shadow(2);
   }
+
   &:active {
-    background-color: #d6d6d6;
+    background-color: $background-right-gray;
   }
 }
