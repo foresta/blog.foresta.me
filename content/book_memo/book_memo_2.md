@@ -2,7 +2,7 @@
 date = "2018-01-16T09:17:03+09:00"
 title = "「ベタープログラマ」を読んだ"
 tags = []
-categories = ["読書ログ"]
+categories = ["booklog"]
 
 +++
 

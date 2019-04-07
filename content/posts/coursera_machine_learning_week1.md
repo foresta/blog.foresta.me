@@ -2,7 +2,7 @@
 date = "2017-06-25T10:33:18+09:00"
 title = "Courseraの機械学習 第1週"
 
-categories = ["engineer"]
+categories = ["engineering"]
 tags = ["機械学習"]
 draft=true
 +++

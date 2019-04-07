@@ -3,7 +3,7 @@ date = "2017-07-21T08:21:52+09:00"
 title = "iOSの通信をキャプチャする"
 draft = true
 
-categories = ["enginner"]
+categories = ["engineering"]
 tags = ["osx", "wireshark", "ios"]
 +++
 
