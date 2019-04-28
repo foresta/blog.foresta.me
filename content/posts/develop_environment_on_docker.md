@@ -72,7 +72,6 @@ env home /home/${user}
 
 run useradd -m ${user}
 run gpasswd -a ${user} sudo
-#run echo "${user}:password" | chpasswd
 
 copy github_id_rsa $home/.ssh/id_rsa
 run chown -r ${user}:${user} $home/.ssh 
