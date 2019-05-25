@@ -1,6 +1,6 @@
 +++
 categories = ["engineering"]
-date = "2019-05-19T00:00:00+09:00"
+date = "2019-05-25"
 title = "SwiftでEnumの全要素を配列で取得する"
 thumbnail = ""
 tags = ["swift"]
