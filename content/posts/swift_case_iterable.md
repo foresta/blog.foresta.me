@@ -1,16 +1,19 @@
 +++
 categories = ["engineering"]
 date = "2019-05-19T00:00:00+09:00"
-title = "Swift4.2のCaseIterableについて"
+title = "SwiftでEnumの全要素を配列で取得する"
 thumbnail = ""
 tags = ["swift"]
 +++
 
 こんにちは、[kz\_morita](https://twitter.com/kz_morita)です。\
 
-最近になって、Swift のEnumに便利な protocol である `CaseIterable` について知ったのでそのことについて書きます。
+最近になって、Swift のEnumの全要素を配列で取得できる便利な protocol である `CaseIterable` について知ったのでそのことについて書きます。
 
 Enumの全列挙子を配列として使用したいといった場合には、このCaseIterableを使うと簡単に実現できるためおすすめです。
+
+ドキュメントはこちら \
+{{< exlink href="https://developer.apple.com/documentation/swift/caseiterable" text="CaseIterable" >}}
 
 ## CaseIterableで全列挙
 
