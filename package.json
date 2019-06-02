@@ -32,6 +32,7 @@
     "webpack-cli": "^3.0.0"
   },
   "dependencies": {
+    "mermaid": "^8.0.0",
     "npm": "^6.9.0"
   }
 }

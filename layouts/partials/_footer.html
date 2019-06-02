@@ -1,16 +1,19 @@
-    <footer class="l-footer">
-      <a class="privacy" href="/privacy_policy">プライバシーポリシー</a>
-      <p class="copyright">
+  <footer class="l-footer">
+    <a class="privacy" href="/privacy_policy">プライバシーポリシー</a>
+    <p class="copyright">
       <small>&copy; {{ .Date.Format "2006" }} {{ .Site.Title }} Allrights reserved.</small>
-      </p>
-    </footer>
-    <script type="text/javascript" src="/javascripts/entry.bundle.js" charset="utf-8"></script>
-    {{ partial "_mathjax.html" . }}
+    </p>
+  </footer>
+  <script type="text/javascript" src="/javascripts/entry.bundle.js" charset="utf-8"></script>
+  {{ partial "_mathjax.html" . }}
 
-    {{ if ne (printf "%v" .Site.BaseURL) "http://localhost:1313/" }}
-      {{ template "_internal/google_analytics_async.html" . }} 
-    {{ end }}
+  {{ if ne (printf "%v" .Site.BaseURL) "http://localhost:1313/" }}
+    {{ template "_internal/google_analytics_async.html" . }} 
+  {{ end }}
 
+
+  <script src="mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
 
   <script>
     if('serviceWorker' in navigator) {
