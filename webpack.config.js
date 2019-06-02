@@ -11,17 +11,21 @@ module.exports = {
   },
   module: {
       rules: [
-      {
-        test: /\.js$/,
-        loader: "babel-loader",
-        options: {
-          presets: ["es2015"]   
-        }
-      },
-      { test: /\.css$/, loader: "style!css" },
-      { test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"] },
-      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: 'url-loader?limit=100000' }
-    ]
+          {
+              parser: { amd: false },
+              include: /node_modules\/lodash\// // https://github.com/lodash/lodash/issues/3052
+          },
+          {
+              test: /\.js$/,
+              loader: "babel-loader",
+              options: {
+                  presets: ["es2015"]   
+              }
+          },
+          { test: /\.css$/, loader: "style!css" },
+          { test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"] },
+          { test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: 'url-loader?limit=100000' }
+      ]
   },
   resolve: {
     extensions: [".js", ".json", ".jsx"]
