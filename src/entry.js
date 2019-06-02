@@ -19,4 +19,4 @@ Array.from(socialBtns).forEach((btn) => {
     socialShare.attach(btn)
 })
 
-mermaid.initialize({startOnLoad:true})
+mermaid.initialize({startOnLoad:true, theme: 'forest'})
