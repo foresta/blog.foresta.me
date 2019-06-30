@@ -31,16 +31,13 @@ Google スプレッドシートは普段業務などでよく使うかと思い�
 名前がつけられるので、なに用のフィルタか記載しておくとよいでしょう。
 （今回は田中タスク確認用と入力しました）
 
-
 {{< figure src="/images/posts/filter_on_spreadsheet/filtered.png" >}}
 
 この状態で、田中さんのタスクだけ確認しようとしてみると以下のようになります。
 
-
 {{< figure src="/images/posts/filter_on_spreadsheet/select_tanaka.png" >}}
 
 {{< figure src="/images/posts/filter_on_spreadsheet/filtered_tanaka.png" >}}
-
 
 このようにすると他のユーザーに影響を与えず好きにフィルタリングすることができます。
 
