@@ -54,7 +54,7 @@ Frontend を開発するにあたり、こちらも neovim で開発したいな
 
 dein.toml は以下のような感じになりました。
 
-```toml
+```
 [[plugins]]
 repo = 'posva/vim-vue'
 hook_add = '''
