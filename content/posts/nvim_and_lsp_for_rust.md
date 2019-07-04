@@ -8,7 +8,7 @@ date = "2019-01-27"
 
 ## 背景
 
-Rustの開発環境をつくろうとしてたら、いつのまにかvimからnvimに移行して、LSPで補完ができるようにしていました。
+Rust の開発環境をつくろうとしてたら、いつのまにか vim から nvim に移行して、LSP で補完ができるようにしていました。
 完全に「ヤクの毛刈り」ですが、ある程度動くようになって結構かきやすくなったので設定周りを紹介します。
 
 ## 成果物
@@ -27,22 +27,22 @@ Rustの開発環境をつくろうとしてたら、いつのまにかvimからn
 
 ### インストール系
 
-Rustはインストールされているものとして話を進めます。
+Rust はインストールされているものとして話を進めます。
 
-neovimのインストール
+neovim のインストール
 
 ```
 $ brew install neovim
 ```
 
-pipでneovimをインストール
+pip で neovim をインストール
 
 ```
 $ pip install neovim
 $ pip3 install neovim
 ```
 
-rustのLSPサーバーや補完用のものをインストール
+rust の LSP サーバーや補完用のものをインストール
 
 ```
 $ rustup update
@@ -74,13 +74,14 @@ $HOME/.config/nvim/
     └── html.vim
 ```
 
-init.vimにnvim初期化用のスクリプトをいれています。
-今回に関係するところでいうとまず、nit.vimのプラグイン周りは以下のようになっています。
-パッケージマネージャはdeinを用いています。
+init.vim に nvim 初期化用のスクリプトをいれています。
+今回に関係するところでいうとまず、nit.vim のプラグイン周りは以下のようになっています。
+パッケージマネージャは dein を用いています。
 
 プラグイン周りの設定は以下のような感じ
 
 #### init.vim
+
 ```vim
 " ===========
 " Plugins
@@ -121,9 +122,10 @@ endif
 filetype plugin indent on
 ```
 
-dein.tomlは以下のような感じ、LSPに関係しそうなところのみ抜き出してますが最低限このくらいで大丈夫なはずです。
+dein.toml は以下のような感じ、LSP に関係しそうなところのみ抜き出してますが最低限このくらいで大丈夫なはずです。
 
 #### dein.toml
+
 ```
 
 [[plugins]]
@@ -167,11 +169,13 @@ source ~/.config/nvim/plugins/rust.rc.vim
 ```
 
 #### rust.rc.vim
+
 ```vim
 let g:rustfmt_autosave = 1
 ```
 
 #### deoplete.rc.vim
+
 ```vim
 " options
 let g:deoplete#enable_at_startup = 1
@@ -187,6 +191,7 @@ let g:deoplete#max_list = 10000
 ```
 
 #### neosnippet.rc.vim
+
 ```vim
 let g:neosnippet#snippets_directory = '~/.config/nvim/snippets'
 let g:neosnippet#enable_snipmate_compatibility = 1
@@ -204,11 +209,10 @@ endif
 
 以下のように設定しています。
 
-
-* `Space + lh` でドキュメント
-* `Space + ld` で定義ジャンプ
-* `Space + lr` でリネーム
-* `Space + lf` でフォーマット
+- `Space + lh` でドキュメント
+- `Space + ld` で定義ジャンプ
+- `Space + lr` でリネーム
+- `Space + lf` でフォーマット
 
 ```vim
 set hidden
@@ -235,7 +239,7 @@ nnoremap <silent> <Space>lf :call LanguageClient_textDocument_formatting()<CR>
 
 ## まとめ
 
-とりあえず、neovimでRustの補完・定義ジャンプ・ドキュメント参照・リネーム・フォーマットができるようになりました。これで開発がはかどるはずです。
+とりあえず、neovim で Rust の補完・定義ジャンプ・ドキュメント参照・リネーム・フォーマットができるようになりました。これで開発がはかどるはずです。
 
 今回は設定ファイルなどをただ列挙しているだけなので、もしわからないこと等あればお気軽に聞いていただければと思います。
 {{< exlink href="https://twitter.com/kz_morita" text="@kz_morita" >}}
