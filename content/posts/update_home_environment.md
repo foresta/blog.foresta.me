@@ -1,7 +1,7 @@
 +++
 categories = ["engineering"]
 date = "2019-07-13"
-title = "Flexispotを導入して家の開発環境を改善した話"
+title = "FlexiSpotを導入して家の開発環境を改善した話"
 thumbnail = ""
 tags = ["desk", "environment", "flexispot"]
 +++
@@ -12,7 +12,7 @@ tags = ["desk", "environment", "flexispot"]
 電車はあまり好きでは無いのでできるだけリモートワークをしていきたいのですがそうなると気になってくるのが自宅の開発環境です。
 できるだけ自宅でもパフォーマンスを落とさずに気持ちよく働きたいので、以前からずっと良い環境を整えたいと感じていました。
 
-今回思い切ってタイトルにある Flexspot を購入したところ、デスク周りがいい感じになってきたのでこの環境について簡単に紹介してみようと思います。
+今回思い切ってタイトルにある FlexiSpot を購入したところ、デスク周りがいい感じになってきたのでこの環境について簡単に紹介してみようと思います。
 
 昇降デスクを導入した結果からいうとかなりよい環境ができたのではないかと思います。\
 後述しますが、今回初めて昇降式のデスクを導入してスタンディングデスクとしても利用していますが、姿勢を時々変えることで集中力が持続しやすくなったと感じているためとても気に入っています。
@@ -25,7 +25,7 @@ tags = ["desk", "environment", "flexispot"]
 
 今回の記事のタイトルにもなっている電動で昇降するデスク (の足) です。
 
-[Flexispot の E1E シリーズ](https://flexispot.jp/shop/height-adjustable-desk/e1e/) を購入しました。
+[FlexiSpot の E1E シリーズ](https://flexispot.jp/shop/height-adjustable-desk/e1e/) を購入しました。
 
 <a href="https://www.amazon.co.jp/FlexiSpot-%E9%9B%BB%E5%8B%95%E5%BC%8F%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%87%E3%82%B9%E3%82%AF%E8%84%9A-%E9%AB%98%E3%81%95%E8%AA%BF%E7%AF%80-%E5%AD%A6%E7%BF%92%E6%9C%BA%E5%8B%89%E5%BC%B7%E6%9C%BA-%E3%83%96%E3%83%A9%E3%83%83%E3%82%AFE1EB/dp/B07FDVGLK8/ref=as_li_ss_il?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=Flexispot+E1E&qid=1562982212&s=gateway&sr=8-1&linkCode=li2&tag=foresta04-22&linkId=ffa7fbe7738ff42298a7be5e837169d2&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07FDVGLK8&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=foresta04-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=foresta04-22&language=ja_JP&l=li2&o=9&a=B07FDVGLK8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
@@ -38,7 +38,7 @@ tags = ["desk", "environment", "flexispot"]
 
 ### 天板
 
-Flexispot 専用の天板というものもあるのですが、自分は謎のこだわりがあったためこちらのサイトからオーダーして天板を購入しました。
+FlexiSpot 専用の天板というものもあるのですが、自分は謎のこだわりがあったためこちらのサイトからオーダーして天板を購入しました。
 
 [マルトクショップ](https://shop.woodworks-marutoku.com)
 
@@ -51,7 +51,7 @@ Flexispot 専用の天板というものもあるのですが、自分は謎の�
 
 ## 工具
 
-今回購入したものは、Flexispot と天板 (木材) なので、組み立てるために電動ドライバーが必要となります。\
+今回購入したものは、FlexiSpot と天板 (木材) なので、組み立てるために電動ドライバーが必要となります。\
 電動ドライバーは以下のものを購入しました。
 
 <a href="https://www.amazon.co.jp/gp/product/B0146D1XG6/ref=as_li_ss_il?ie=UTF8&psc=1&linkCode=li2&tag=foresta04-22&linkId=d4d735f9c4f2772dae840db874399485&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0146D1XG6&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=foresta04-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=foresta04-22&language=ja_JP&l=li2&o=9&a=B0146D1XG6" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
@@ -64,9 +64,9 @@ Flexispot 専用の天板というものもあるのですが、自分は謎の�
 
 それでは、組み立てに入りましょう。
 
-Flexispot の部品は電動で昇降する用のバッテリーなどが内包されいるためとても重いです。そのため二人以上での作業が推奨されています。
+FlexiSpot の部品は電動で昇降する用のバッテリーなどが内包されいるためとても重いです。そのため二人以上での作業が推奨されています。
 
-Flexispot のダンボールを開けると以下のような部品たちが入っています。
+FlexiSpot のダンボールを開けると以下のような部品たちが入っています。
 
 {{< figure src="/images/posts/update_home_environment/parts.jpg" >}}
 
