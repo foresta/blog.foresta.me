@@ -1,5 +1,5 @@
 +++
-date = "2019-08-04"
+date = "2019-08-11"
 title = "ナップサック問題をメモ化を使って解く"
 
 categories = ["engineering"]
