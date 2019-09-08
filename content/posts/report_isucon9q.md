@@ -1,6 +1,6 @@
 +++
 date = "2019-09-08"
-title = "isucon9予選に参加して予選敗退でした"
+title = "isucon9は 最終スコア 8,860 で予選敗退でした"
 thumbnail = ""
 tags = ["isucon"]
 categories = ["engineering"]
