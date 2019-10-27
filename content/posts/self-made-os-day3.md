@@ -1,7 +1,7 @@
 +++
 title = "自作OS3日目 Docker上でOSをビルドする"
 thumbnail = ""
-tags = ["アセンブラ", "c", "Docker", "Dockerfile", "Makefile", "os", "os自作"]
+tags = ["アセンブラ", "assembler", "nasm", "Docker", "Dockerfile", "Makefile", "os", "os自作"]
 categories = ["engineering"]
 date = "2019-10-27"
 +++
