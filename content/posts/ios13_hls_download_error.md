@@ -32,7 +32,7 @@ HLS のプレイリストファイルには、メディアプレイリストと�
 
 #### メディアプレイリスト
 
-```m3u8
+```
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-TARGETDURATION:10
@@ -54,14 +54,14 @@ vodeo002.ts
 
 #### マスタープレイリスト
 
-```m3u8
+```
 #EXTM3U
 #EXT-X-STREAM-INF:BANDWIDTH=1280000,AVERAGE-BANDWIDTH=1000000
 http://example.com/low.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=2560000,AVERAGE-BANDWIDTH=2000000
 http://example.com/mid.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=7680000,AVERAGE-BANDWIDTH=6000000
-http://example.com/high.m4u8
+http://example.com/high.m3u8
 ```
 
 マスタープレイリストでは、帯域幅などを指定して通信状況に応じてメディアプレイリストを切り替えるといった指定をすることができます。
