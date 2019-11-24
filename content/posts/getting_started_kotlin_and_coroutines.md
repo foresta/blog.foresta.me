@@ -56,7 +56,7 @@ coroutine を使うために build.gradle を修正します。
 
 自分の環境の build.gradle を以下に載せます。
 
-```gradle
+```
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.3.41'
 }
