@@ -42,3 +42,4 @@ jobs:
         SSH_USER: ${{ secrets.SSH_USER }} 
         SSH_PORT: ${{ secrets.SSH_PORT }}
         DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        SSH_HOST: ${{ secrets.SSH_HOST }}
