@@ -16,7 +16,7 @@ jobs:
     - name: Setup hugo
       run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}-64bit.deb 
-          dpkg -i hugo_${HUGO_VERSION}-64bit.deb
+          sudo dpkg -i hugo_${HUGO_VERSION}-64bit.deb
           hugo version
       env:
           HUGO_VERSION: '0.18.1'
