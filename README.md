@@ -1,3 +1,3 @@
-# ブログ
+# blog.foresta.me
 
-hugoでブログを構築
+This is blog written by [@kz_morita](https://twitter.com/kz_morita).
