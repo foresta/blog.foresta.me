@@ -4,7 +4,6 @@
 
 .l-main {
   margin-top: 55px;
-
 }
 
 .l-site-header {
@@ -19,21 +18,21 @@
     padding-bottom: 25px;
 
     .logo {
-      vertical-align: top; 
-      line-height: 6.0rem; 
+      vertical-align: top;
+      line-height: 6rem;
     }
 
     .site-title {
       color: white;
       text-align: center;
-      font-size: 6.0rem;
+      font-size: 6rem;
       letter-spacing: 0.2rem;
       font-weight: 100;
       margin-bottom: 10px;
       display: inline-block;
 
       @include media-sp {
-        font-size: 4.0rem;
+        font-size: 4rem;
       }
     }
 
@@ -53,18 +52,18 @@
   position: relative;
 
   .container {
-      max-width: 900px;
+    max-width: 900px;
   }
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     background-color: $main-color;
     height: 250px;
     width: 100%;
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     z-index: -1;
   }
 }
@@ -72,14 +71,14 @@
 .l-post {
   position: relative;
   max-width: 900px;
-  
+
   @include media-sp {
     padding-top: 48px;
     padding-bottom: 24px;
     padding-left: 12px;
     padding-right: 12px;
   }
-  
+
   @include media-tb {
     padding-top: 48px;
     padding-bottom: 24px;
@@ -103,7 +102,6 @@
     @include shadow(2);
   }
 
-
   .l-share {
     position: absolute;
     top: -28px;
@@ -117,9 +115,13 @@
 }
 
 .l-list-title {
-  font-size: 3.0rem;
+  font-size: 3rem;
   max-width: 900px;
   margin-bottom: 20px;
   padding-left: 10px;
   border-bottom: 3px solid $main-color;
+}
+
+.l-related-articles {
+  margin-top: 64px;
 }

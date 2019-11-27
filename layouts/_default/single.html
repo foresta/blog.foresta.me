@@ -54,6 +54,18 @@
       {{ .Content }}
     </article>
   </div>
-  <!-- </div> -->
 </div>
+
+{{ $related := .Site.RegularPages.Related . }}
+{{ with $related }}
+<div class="container l-related-articles">
+  <h2 class="l-list-title">関連記事</h2>
+  <ul class="l-box-wrap container col3">
+  {{ range . }}
+    <li class="l-box">{{ partial "_list-item.html" . }}</li>
+  {{ end }}
+  </ul>
+</div>
+{{ end }}
+
 {{ partial "_footer.html" . }}
