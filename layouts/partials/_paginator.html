@@ -1,4 +1,4 @@
-{{ $page := $.Paginator }}
+{{ $page := $.Paginator 24 }}
 
 {{ if gt $page.TotalPages 1 }}
   <ul class="pagination">
