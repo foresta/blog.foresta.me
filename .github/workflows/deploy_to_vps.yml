@@ -15,11 +15,11 @@ jobs:
       uses: actions/checkout@v1
     - name: Setup hugo
       run: |
-          wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}-64bit.deb 
-          sudo dpkg -i hugo_${HUGO_VERSION}-64bit.deb
+          wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb 
+          sudo dpkg -i hugo_${HUGO_VERSION}_Linux-64bit.deb
           hugo version
       env:
-          HUGO_VERSION: '0.18.1'
+          HUGO_VERSION: '0.59.1'
     - name: Setup node
       uses: actions/setup-node@v1
       with:
