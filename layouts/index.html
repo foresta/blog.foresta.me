@@ -11,12 +11,11 @@
 
   <article>
     <ul class="l-box-wrap container col3">
-    {{ range (where .Data.Pages "Section" "posts") }}
-      {{ $paginator := .Paginate (where .Pages "Type" "posts") 24 }}
+      {{ $pages := (where (where .Site.Pages "Section" "posts") ".IsPage" true) }}
+      {{ $paginator := .Paginate $pages 24 }}
       {{ range $paginator.Pages }}
         <li class="l-box">{{ partial "_list-item.html" . }}</li>
       {{ end }}
-    {{ end }}
     </ul>
   </article>
   {{ partial "_paginator.html" . }}
