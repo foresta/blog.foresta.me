@@ -6,6 +6,8 @@ categories = ["engineering"]
 date = "2019-11-26"
 +++
 
+この記事は、[write-blog-every-week Advent Calendar 2019](https://adventar.org/calendars/3945) の 3 日目の記事です。
+
 こんにちは、[@kz_morita](https://twitter.com/kz_morita) です。ブログを初めてはや 1 年ちょっと経ちました。
 
 このブログは [Hugo](https://gohugo.io/) という静的サイトジェネレータでビルドをして、さくら VPS にデプロイをしています。
@@ -19,6 +21,8 @@ VPS 上には Jenkins が動いており、GitHub の push を hook してデプ
 ## GitHub Actions とは
 
 GitHub Actions は GitHub が提供する CI / CD 環境です。
+
+https://help.github.com/ja/actions/automating-your-workflow-with-github-actions/about-github-actions
 
 料金としては、Public リポジトリであれば無料。
 プライベートリポジトリであれば、Github の登録プランとデフォルトの使用制限を超えると超過分が請求されるといった形です。
@@ -52,7 +56,7 @@ New workflow を押すと実際に作成することができます。
 
 {{< figure src="/images/posts/deploy_blog_with_github_actions/github_actions_setup_workflow.png" >}}
 
-以下のような workflow の編集画面が表示されます。右側の Marketplace では、公開されている Actions を使用することもできます。
+Workflow を作成すると、以下のような workflow の編集画面が表示されます。右側の Marketplace では、公開されている Actions を使用することもできます。
 
 {{< figure src="/images/posts/deploy_blog_with_github_actions/github_actions_workflow_editor.png" >}}
 
