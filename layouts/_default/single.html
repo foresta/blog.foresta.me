@@ -30,16 +30,16 @@
         <i class="icon-share"></i>
       </a>
       <ul class="social-btns">
-        <li class="floating-action-btn twitter">
+        <li class="floating-action-btn social-button twitter">
           <a data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-service="twitter" class="icon-twitter"></a>
         </li>
-        <li class="floating-action-btn facebook">
+        <li class="floating-action-btn social-button facebook">
           <a data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-service="facebook" class="icon-facebook"></a>
         </li>
-        <li class="floating-action-btn hatena">
+        <li class="floating-action-btn social-button hatena">
           <a data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-service="hatebu" class="icon-hatebu"></a>
         </li>
-        <li class="floating-action-btn pocket">
+        <li class="floating-action-btn social-button pocket">
           <a data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-service="pocket" class="icon-pocket"></a>
         </li>
       </ul>
@@ -54,6 +54,24 @@
       {{ .Content }}
     </article>
   </div>
+</div>
+
+<div class="container share-list">
+  <div class="share-list_title">この記事をシェア</div>
+<ul class="share-list_buttons">
+  <li class="floating-action-btn social-button twitter">
+    <a data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-service="twitter" class="icon-twitter"></a>
+  </li>
+  <li class="floating-action-btn social-button facebook">
+    <a data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-service="facebook" class="icon-facebook"></a>
+  </li>
+  <li class="floating-action-btn social-button hatena">
+    <a data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-service="hatebu" class="icon-hatebu"></a>
+  </li>
+  <li class="floating-action-btn social-button pocket">
+    <a data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-service="pocket" class="icon-pocket"></a>
+  </li>
+</ul>
 </div>
 
 {{ $related := .Site.RegularPages.Related . }}

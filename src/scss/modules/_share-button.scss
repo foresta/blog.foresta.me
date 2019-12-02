@@ -4,7 +4,6 @@ $social-btn-size: 48px;
 $social-btn-px: 45;
 
 .share-button {
-
   .share {
     z-index: 1;
     display: block;
@@ -14,7 +13,7 @@ $social-btn-px: 45;
 
   .social-btns {
     $padding: -132px;
-    
+
     li {
       width: $social-btn-close-size;
       height: $social-btn-close-size;
@@ -30,26 +29,15 @@ $social-btn-px: 45;
       right: 0;
       left: 0;
       bottom: 0;
-
     }
 
-    a {
-      color: white;
-      text-decoration: none;
-      font-size: 2.0rem;
-      line-height: $social-btn-size;
-      cursor: pointer;
-      display: block;
-    }
-
-    &.open{
-
+    &.open {
       li {
-        transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        -webkit-transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         width: $social-btn-size;
         height: $social-btn-size;
 
+        transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all 300ms 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         &:hover {
           transition: all 600ms 0s ease;
           -webkit-transition: all 600ms 0s ease;
@@ -57,21 +45,17 @@ $social-btn-px: 45;
 
         &.facebook {
           top: $padding;
-          background-color:#3b5999; 
         }
         &.pocket {
           left: -132 * 1.732 / 2 + px;
           bottom: -132 / 2 + px;
-          background-color: #ee4056;
         }
         &.hatena {
           bottom: $padding;
-          background-color: #00a4de;
         }
         &.twitter {
           left: -132 * 1.732 / 2 + px;
           top: -132 / 2 + px;
-          background-color: #55acee; // twitter color
         }
       }
     }
@@ -83,5 +67,49 @@ $social-btn-px: 45;
       }
     }
   }
+}
 
+.social-button {
+  width: $social-btn-size;
+  height: $social-btn-size;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: $social-btn-size;
+    cursor: pointer;
+    display: block;
+  }
+
+  &.facebook {
+    background-color: #3b5999;
+  }
+  &.pocket {
+    background-color: #ee4056;
+  }
+  &.hatena {
+    background-color: #00a4de;
+  }
+  &.twitter {
+    background-color: #55acee;
+  }
+}
+
+.share-list {
+  margin: 32px auto;
+
+  .share-list_title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .share-list_buttons {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
