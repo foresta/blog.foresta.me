@@ -3,7 +3,7 @@ title = "GitHub ActionsでHugoのブログをVPSにデプロイする"
 thumbnail = ""
 tags = ["github_actions", "hugo", "さくらvps"]
 categories = ["engineering"]
-date = "2019-11-26"
+date = "2019-12-03T00:00:00+09:00"
 +++
 
 この記事は、[write-blog-every-week Advent Calendar 2019](https://adventar.org/calendars/3945) の 3 日目の記事です。
