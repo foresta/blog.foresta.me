@@ -1,10 +1,15 @@
 +++
 title = "ブログ執筆とブログ開発のススメ"
 categories = ["engineering"]
-date = "2019-12-06T00:00:00+09:00"
+date = "2019-12-15T00:00:00+09:00"
 thumbnail = ""
 tags = ["blog", "hugo"]
 +++
+
+このブログは、{{< exlink href="https://adventar.org/calendars/3945" text="write-blog-every-week Advent Calendar 2019" >}} の 15 日目の記事です。\
+昨日は、{{< exlink text="@budougumi0617" href="https://twitter.com/budougumi0617" >}} さんで、{{< exlink text="2019 年振り返り(GitHub 編)" href="https://budougumi0617.github.io/2019/12/14/retrospective-on-github-2019/" >}} でした。
+
+---
 
 こんにちは、{{< exlink href="https://twitter.com/kz_morita" text="@kz_morita" >}}です。\
 
@@ -101,3 +106,7 @@ tags = ["blog", "hugo"]
 個人サービスをもつということは非常に良い経験や知識が得られるためよいのですが、開発するサービスがブログになるとさらに相乗効果が生まれると思います。この点が自分はすごく気に入ってます。
 
 これからブログを書こうと思っている方は、ぜひ自分でブログを作るということも選択肢のひとつとして考えていただければなーと思います。
+
+---
+
+明日の Advent Calendar 16 日目は、{{< exlink text="koji/メガネ男" href="https://twitter.com/megane_kiton" >}} さんの予定です。
