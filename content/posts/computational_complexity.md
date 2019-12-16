@@ -1,6 +1,6 @@
 +++
 title="計算量・漸近計算量・オーダー記法について"
-date="2019-12-16T12:08:13+09:00"
+date="2019-12-16T00:00:00+09:00"
 categories = []
 tags = ["algorithm", "computer_science"]
 thumbnail = ""
