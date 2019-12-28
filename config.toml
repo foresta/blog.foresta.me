@@ -5,9 +5,10 @@ title = "blog.foresta.me"
 
 enableRobotsTXT = true
 canonifyurls = true
+
 pygmentsCodeFences = true
-pygmentsOptions = "nobackground=true"
-pygmentsstyle = "github"
+pygmentsUseClasses = true
+
 googleAnalytics = "UA-102975147-1"
 
 [taxonomies]

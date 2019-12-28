@@ -13,5 +13,4 @@ cover.out
 *.log
 public/
 static/javascripts
-static/stylesheets
 node_modules/
