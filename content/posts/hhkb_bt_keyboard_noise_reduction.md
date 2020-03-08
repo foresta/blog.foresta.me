@@ -8,44 +8,43 @@ tags = ["keyboard"]
 
 ## はじめに
 
-この記事はHHKB BTの静音化が無事に完了し、ほっと息をなでおろしながら書いています。
-当然、静音化されたHHKB BTで書いているのですが、最高に気持ち良いです。\
-タイピングしている感触でいうと、HHKBのType-Sにかなり近いです。
+この記事は HHKB BT の静音化が無事に完了し、ほっと息をなでおろしながら書いています。
+当然、静音化された HHKB BT で書いているのですが、最高に気持ち良いです。\
+タイピングしている感触でいうと、HHKB の Type-S にかなり近いです。
 
-3万もする高級キーボードを改造するので多少のリスクはありますが今回静音化して正解でした。
-Type-Sの感触が好きな方は、静音化にチャレンジしてみると良いのではないでしょうか？
+3 万もする高級キーボードを改造するので多少のリスクはありますが今回静音化して正解でした。
+Type-S の感触が好きな方は、静音化にチャレンジしてみると良いのではないでしょうか？
 
 (リスクがあるし保証も効かなくなるので、あくまで自己責任でお願いします)
 
 ## 静音化のきっかけ
 
-職場や家でも普段からHHKB BTを使用していて、特に不満はなかったのですがある日、会社の集中席で仕事をしているときに、やたら自分の叩くキーボードの音が気になりました。\
+職場や家でも普段から HHKB BT を使用していて、特に不満はなかったのですがある日、会社の集中席で仕事をしているときに、やたら自分の叩くキーボードの音が気になりました。\
 もしかしたら周りの人も気になってるかも？と思い始めるとなんだか気が散ってしまい、集中席で集中できないというよくわからない現象に陥ってしまいました。
 
-このままではいけない、とそう決意した私は、HHKB BT の静音化 (Type-S化) に取り組むのでした。
+このままではいけない、とそう決意した私は、HHKB BT の静音化 (Type-S 化) に取り組むのでした。
 
-まぁきっかけは集中席でしたが、前々からType-Sのタイピング感とか「スコスコ」っていう音がすごい好きだったので、良いタイミングだなーと思いチャレンジしてみました。
+まぁきっかけは集中席でしたが、前々から Type-S のタイピング感とか「スコスコ」っていう音がすごい好きだったので、良いタイミングだなーと思いチャレンジしてみました。
 
 ## 作業準備
 
-「HHKB BT 静音化」などでググってみるといくつかの記事がヒットしたのですが、O-Ringと呼ばれるメカニカルキーボードの静音化用のゴムが売られているみたいだったのでそれを購入しました。
+「HHKB BT 静音化」などでググってみるといくつかの記事がヒットしたのですが、O-Ring と呼ばれるメカニカルキーボードの静音化用のゴムが売られているみたいだったのでそれを購入しました。
 
 <a href="https://www.amazon.co.jp/gp/product/B01H6Q53UC/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=foresta04-22&linkId=b1dee96f51d4e7cd0e6d9098bf326dc6&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01H6Q53UC&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=foresta04-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=foresta04-22&language=ja_JP&l=li2&o=9&a=B01H6Q53UC" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> \
-{{< exlink src="https://amzn.to/2FZoW5X" text="Hapurs メカニカル キーボード Cherry MX軸対応 ゴム 静音化リング O-Ring" >}}
+{{< exlink href="https://amzn.to/2FZoW5X" text="Hapurs メカニカル キーボード Cherry MX軸対応 ゴム 静音化リング O-Ring" >}}
 
-上記は、Cherry-MX用と書かれていましたが、HHKB BTでも問題なく使用することができました。
-
+上記は、Cherry-MX 用と書かれていましたが、HHKB BT でも問題なく使用することができました。
 
 そのほかにキーキャップを外すので以下のような器具があるとよさそうです。
 
 <a href="https://www.amazon.co.jp/dp/B00HC2W0FC/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=foresta04-22&linkId=adbf92f544d165b7f09244caf5de0857&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00HC2W0FC&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=foresta04-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=foresta04-22&language=ja_JP&l=li2&o=9&a=B00HC2W0FC" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> \
-{{< exlink src="https://amzn.to/2FUEqb7" text="PFU カラーキートップセット（HHKB Professionalシリーズ専用） PD-KB400KT01" >}}
+{{< exlink href="https://amzn.to/2FUEqb7" text="PFU カラーキートップセット（HHKB Professionalシリーズ専用） PD-KB400KT01" >}}
 
 上記はカラーキートップセットですが、キーキャップを引き抜く器具のみでも販売しているかと思うので探してみてください。
 
 あとは、プラスドライバーがあれば作業を開始することができます。
 
-作業全体を通して、だいたい1時間半から2時間くらいかかった気がするのでそのくらいの時間を確保しておけば良いでしょう。
+作業全体を通して、だいたい 1 時間半から 2 時間くらいかかった気がするのでそのくらいの時間を確保しておけば良いでしょう。
 
 ## 作業開始
 
@@ -62,19 +61,17 @@ Type-Sの感触が好きな方は、静音化にチャレンジしてみると�
 {{< figure src="/images/posts/hhkb_bt_keyboard_noise_reduction/keyboard-back.jpg" >}}
 
 外すときに少し力がいるのですが、線で上下が繋がっているので慎重にあけます。\
-開けると以下の画像のようにBluetooth用の基盤が線で繋がっているのが確認できます。
+開けると以下の画像のように Bluetooth 用の基盤が線で繋がっているのが確認できます。
 
 {{< figure src="/images/posts/hhkb_bt_keyboard_noise_reduction/open-keyboard.jpg" >}}
 
-### Bluetoothの基盤を外す
-
+### Bluetooth の基盤を外す
 
 この後、以下の画像の赤丸部分の線と基盤を外していくのが正しい手順なのですが、自分の場合この線がなかなか外せずにかなり苦戦しました。あまり力を入れすぎて線が断線しても怖かったので、結局この線は繋いだまま作業をしました。
 
 {{< figure src="/images/posts/hhkb_bt_keyboard_noise_reduction/open-keyboard-2.jpg" >}}
 
-
-Bluetooth用の基盤を外していくのですが、基盤はねじ止めと強力な粘着テープでとめられています。
+Bluetooth 用の基盤を外していくのですが、基盤はねじ止めと強力な粘着テープでとめられています。
 ネジの位置は以下の画像を参考にしてください。
 
 {{< figure src="/images/posts/hhkb_bt_keyboard_noise_reduction/open-keyboard-3.jpg" >}}
@@ -94,7 +91,6 @@ Bluetooth用の基盤を外していくのですが、基盤はねじ止めと�
 {{< figure src="/images/posts/hhkb_bt_keyboard_noise_reduction/board-with-rubber.jpg" >}}
 
 基盤側はこの後の作業では使用しないので、一旦どこかに置いておきましょう。(裏側に強力な粘着テープがあるので、くっつきにくいところに置くのが良いでしょう。)
-
 
 ここまでくるといよいよ終盤って感じがしてきます。\
 
@@ -116,18 +112,17 @@ Bluetooth用の基盤を外していくのですが、基盤はねじ止めと�
 
 {{< figure src="/images/posts/hhkb_bt_keyboard_noise_reduction/key-base.jpg" >}}
 
-### O-Ringを装着する
+### O-Ring を装着する
 
-前の手順で外した軸にO-Ringを装着していきます。
+前の手順で外した軸に O-Ring を装着していきます。
 
 作業中の心境
 
 {{< tweet 1114509954012999685 >}}
 
-
 面倒だとか言いつつ結構ノリノリでもくもくと作業してました。こういう地味な作業意外と好きです。
 
-O-Ringをつけた状態が以下の写真です。なんだかとても可愛いですね。
+O-Ring をつけた状態が以下の写真です。なんだかとても可愛いですね。
 
 {{< figure src="/images/posts/hhkb_bt_keyboard_noise_reduction/oring.jpg" >}}
 
@@ -146,22 +141,21 @@ O-Ringをつけた状態が以下の写真です。なんだかとても可愛�
 
 ここまでで静音化の作業は完了です！ \
 
-静かになったHHKBの打ち心地を楽しみましょう。
+静かになった HHKB の打ち心地を楽しみましょう。
 
 {{< tweet 1114519959638429697 >}}
 
 ## まとめ
 
-今回は、HHKB BTの静音化にチャレンジしてみました。\
+今回は、HHKB BT の静音化にチャレンジしてみました。\
 値段が値段だけに失敗できないという緊張感のもと、慎重に作業していたので結構疲れました。
 
-O-Ringをはめただけなのですが、はめる前に比べるとかなりタイピング感や、音が変わります。\
-Type-Sの打感が好きな方には本当におすすめです。
+O-Ring をはめただけなのですが、はめる前に比べるとかなりタイピング感や、音が変わります。\
+Type-S の打感が好きな方には本当におすすめです。
 
-(が、あくまで自己責任でチャレンジしてみてくださいね。HHKBの分解・改造は、製造元であるPFUの保証外になります。)
+(が、あくまで自己責任でチャレンジしてみてくださいね。HHKB の分解・改造は、製造元である PFU の保証外になります。)
 
 ## 参考サイト
 
-* {{< exlink "https://gadget-touch.info/2019/02/01/hhkbbt-silent/" >}}
-* {{< exlink "https://qiita.com/zebult/items/8733e7c8357a83f2af42" >}}
-
+- {{< exlink "https://gadget-touch.info/2019/02/01/hhkbbt-silent/" >}}
+- {{< exlink "https://qiita.com/zebult/items/8733e7c8357a83f2af42" >}}
