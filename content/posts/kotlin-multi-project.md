@@ -1,6 +1,6 @@
 +++
 title="Kotlin のマルチプロジェクトの設定について"
-date="2020-03-07T07:23:00+09:00"
+date="2020-03-08T15:00:00+09:00"
 categories = ["engineering"]
 tags = ["kotlin", "gradle", "intellij", "architecture"]
 thumbnail = ""
