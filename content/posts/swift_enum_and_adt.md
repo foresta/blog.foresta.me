@@ -1,24 +1,17 @@
 +++
 categories = ["engineering"]
-date = "2018-12-06T09:00:35+09:00"
-title = "SwiftのEnumと代数的データ型"
+date = "2020-04-19T19:14:35+09:00"
+title = "SwiftのEnumと代数的データ型について"
 thumbnail = ""
-tags = ["swift", "advent-calendar"]
-
-draft = true
+tags = ["swift"]
 +++
-
-この記事は[NewsPicks Advent Calendar 2018](https://qiita.com/advent-calendar/2018/newspicks)の6日目の記事です。
 
 ## はじめに
 
-皆さんこんにちは。\
-NewsPicksでソフトウェアエンジニアをしている [@kz_morita](https://twitter.com/kz_morita)です。
+こんにちは。{{< exlink href="https://twitter.com/kz_morita" text="@kz_morita" >}}です。
 
-NewsPicksには11/1にjoinしたので約一ヶ月ほどたったという状態です。\
-私は、これまでずっとスマートフォンゲーム開発 (サーバーとクライアント両方) やってきたのですが、現在はiOSエンジニアとして働かせてもらっています。
 
-初めてのiOS/Swiftということでいろいろキャッチアップ中なのですが、色々触っていく中でSwiftのEnumは面白いなと感じることがあったのでそのことについて書いていこうかなと思います。
+今回はSwift の Enum と代数的データ型についてまとめていきます。
 
 
 ## Swift の Enumについて
@@ -180,7 +173,7 @@ SampleEnum.sample1(true, true)
 SampleEnum.sample1(true, false)
 SampleEnum.sample1(false, true)
 SampleEnum.sample1(false, false)
-SampleEnum.sample2(N) // 128通り
+SampleEnum.sample2(N) // 256通り
 ```
 
 つまり、取りうる値の数は以下のようになります。
@@ -276,12 +269,8 @@ case .failure(let err):
 ## まとめ
 
 一般的に型に余分な値が入る余地があるということはそれだけエラーが起きる可能性が増え、またそれを防ぐためのエラーハンドリングが必要になることを意味しています。\
+(型がNullを許容すると、Nullチェックが必要になるということです)
+
 直和型をサポートしている言語はそこまで多くありません (Haskell, OCaml, Rust, Elm, TypeScript, C++, etc...) が、
-非常に強力な仕組みなのでうまく利用してシンプルかつ堅牢なシステムをつくることが重要だなぁと思います。
-
-
-## さいごに
-
-NewsPicksはiOSの開発を一緒に開発していただけるメンバーを募集しています。\
-世の中にインパクトを与えるようなアプリを作っていきたい方を大歓迎していますので、お気軽に[ご連絡](https://www.wantedly.com/companies/newspicks/projects)していただけると幸いです。
+非常に強力な仕組みなのでうまく利用してシンプルかつ堅牢なシステムをつくることが重要だなぁと思いました。
 
