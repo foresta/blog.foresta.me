@@ -22,3 +22,8 @@ noimage = "noimage.jpg"
 
 [permalinks]
 posts = "/posts/:filename/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
