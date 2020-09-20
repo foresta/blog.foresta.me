@@ -8,7 +8,7 @@ thumbnail = ""
 
 こんにちは、{{< exlink href="https://twitter.com/kz_morita" text="@kz_morita" >}}です。
 
-SPAを開発する際に，APIサーバーと，フロントエンドが別の言語になることは度々起こると思いますが，Respinse や Request の型を共通のものを使用することにより，APIの疎通などの確認がとりやすいと感じています．
+SPAを開発する際に，APIサーバーと，フロントエンドが別の言語になることは度々起こると思いますが，Response や Request の型を共通のものを使用することにより，APIの疎通などの確認がとりやすいと感じています．
 
 現在の開発プロジェクトでは，Kotlin で開発した API サーバーの Response から, TypeScript の型定義ファイル (d.ts) を生成する仕組みを導入しました.
 
