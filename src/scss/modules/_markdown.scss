@@ -145,12 +145,13 @@
      * table 
      */
   table {
-    display: table;
+    display: block;
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
     border-color: #555555;
     overflow: auto;
+    white-space: nowrap;
     margin: 30px auto;
 
     tr {
