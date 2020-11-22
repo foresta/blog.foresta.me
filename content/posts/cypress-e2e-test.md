@@ -8,7 +8,7 @@ thumbnail = ""
 
 こんにちは、{{< exlink href="https://twitter.com/kz_morita" text="@kz_morita" >}}です。
 
-Cypress を使って，現在開発しているプロジェクトに，E2E Test を導入してみたらなかなか良かったのでまとめていきます．
+Cypress を使って現在開発しているプロジェクトに，E2E Test を導入してみたらなかなか良かったので，Cypressの特徴などについてまとめていきます．
 
 ## Cypress とは
 
