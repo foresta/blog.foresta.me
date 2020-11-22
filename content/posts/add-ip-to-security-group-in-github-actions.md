@@ -2,7 +2,7 @@
 title="Github Actions から AWS の Security Group に Public IPを追加する"
 date="2020-11-23T00:31:09+09:00"
 categories = ["engineering"]
-tags = ["github", "github-actions_", "aws", "security-group", "e2e", "e2e-test", "test"]
+tags = ["github", "github-actions", "aws", "security-group", "e2e", "e2e-test", "test"]
 thumbnail = ""
 +++
 

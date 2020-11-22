@@ -1,7 +1,7 @@
 +++
 title = "GitHub ActionsでHugoのブログをVPSにデプロイする"
 thumbnail = ""
-tags = ["github_actions", "hugo", "さくらvps"]
+tags = ["github-actions", "hugo", "さくらvps"]
 categories = ["engineering"]
 date = "2019-12-03T00:00:00+09:00"
 +++
