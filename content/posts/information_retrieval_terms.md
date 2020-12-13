@@ -2,7 +2,7 @@
 title="検索システムと辞書・用語"
 date="2020-11-29T16:36:38+09:00"
 categories = ["engineering"]
-tags = ["information_retrieval", "terms"]
+tags = ["information_retrieval", "情報検索", "terms"]
 thumbnail = ""
 +++
 

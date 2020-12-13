@@ -2,7 +2,7 @@
 title="情報検索と転置インデックス"
 date="2020-11-01T19:02:08+09:00"
 categories = ["engineering"]
-tags = ["information_retrieval", "index"]
+tags = ["information_retrieval", "情報検索", "index"]
 thumbnail = ""
 +++
 
