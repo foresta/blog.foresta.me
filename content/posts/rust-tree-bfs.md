@@ -12,6 +12,8 @@ thumbnail = ""
 
 ちなみに，ソースコードこちらに雑に上げてます．
 
+{{< exlink href="https://github.com/foresta/rust-tree">}}
+
 
 ## データ構造
 
