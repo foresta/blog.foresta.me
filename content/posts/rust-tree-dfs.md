@@ -10,6 +10,11 @@ thumbnail = ""
 
 LeetCode で遊んでいて Rust で木構造の実装をしたのでまとめておきます．
 
+ちなみに，ソースコードこちらに雑に上げてます．
+
+{{< exlink href="https://github.com/foresta/rust-tree">}}
+
+
 ## データ構造
 
 以下のようなデータ構造で木構造を表現します．
