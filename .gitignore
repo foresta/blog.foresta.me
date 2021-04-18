@@ -14,3 +14,4 @@ cover.out
 public/
 static/javascripts
 node_modules/
+.env
