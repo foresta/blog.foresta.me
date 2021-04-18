@@ -1,0 +1,16 @@
+{{ partial "_header.html" . }}
+
+<div class="l-main">
+  <div class="l-site-header">
+    <div class="l-site-header-inner">
+      <h1 class="site-title">{{ .Site.Title }}</h1>
+      <div class="site-description">{{ .Site.Params.description }}</div>
+    </div>
+  </div>
+
+  <div class="container" style="text-align:center; padding: 50px;">
+    <h2 class="container huge" style="padding-bottom: 24px;">404 Not Found</h2>
+    <img width="180" src="/images/logo/logo-main.png" />
+  </div>
+</div>
+{{ partial "_footer.html" . }}

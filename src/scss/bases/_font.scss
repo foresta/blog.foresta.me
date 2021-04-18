@@ -62,3 +62,12 @@ a {
     color: $link-color;
     font-weight: 500;
 }
+
+.huge {
+  font-weight: 400;
+  font-size: 3.5rem;
+
+  @include media-sp {
+    font-size: 3rem;
+  }
+}
