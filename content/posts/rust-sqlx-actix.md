@@ -30,13 +30,19 @@ thumbnail = ""
 [dependencies]
 actix-web = "3"
 actix-rt = "^1.1.1"
-sqlx = { version = "0.2", features = [ "runtime-actix-rustls", "mysql", "chrono" ] }
+sqlx = { version = "0.5", features = [ "runtime-actix-rustls", "mysql", "chrono" ] }
 ```
 
 
 上記の状態でDBの接続周りのコードは以下のような感じです．
 
 ```rust
+use dotenv::dotenv;
+use sqlx::mysql::MySqlPool;
+use std::env;
+
+// ...
+
 let database = env::var("MYSQL_DATABASE").expect("MYSQL_DATABASE is not set");
 let user = env::var("MYSQL_USER").expect("MYSQL_USER is not set");
 let password = env::var("MYSQL_PASSWORD").expect("MYSQL_PASSWORD is not set");
@@ -65,10 +71,10 @@ let pool = sqlx::mysql::MySqlPoolOptions::new()
 `Err` value: Tls(InvalidDNSNameError)
 ```
 
-この問題は以下の Issue で話されていました．
+この問題は以下の Issue で話されているようです．
 - {{< exlink href="https://github.com/launchbadge/sqlx/issues/846" >}}
 
-ここによると，ipaddress 部を `［］` で囲むと良いと書かれていて，試しましたがこちらはうまく行きませんでした．
+ここによると，ipaddress 部を `［］` で囲むと良いと書かれていますが，こちらはうまく行きませんでした．
 
 ```rust
 let database_url = format!(
@@ -77,13 +83,13 @@ let database_url = format!(
 )
 ```
 
-以下のようなエラーが表示されました．
+以下のようなエラーが表示されます．
 
-```rust
+```
  `Err` value: Configuration(InvalidIpv6Address)'
 ```
 
-IPv6 として認識されてしまうようでした．ipv4 のアドレスを，ipv6 に変換すれば上記でも動くかもしれないですが，今回はそれを試しませんでした．
+どうやら ipv6 として認識されてしまうようでした．ipv4 のアドレスを，ipv6 に変換すれば上記でも動くかもしれないですが，今回はそれを試しませんでした．
 
 同 issue 内で，sqlx の features に，rustls ではなく，native-tls を指定すればうまく動くとあり，こちらを試したところ正常に動作しました．
 
@@ -129,7 +135,7 @@ sqlx の 0.4.2 を使えばOK
 - 要求する tokio が ^0.2.21
 ```
 
-sqlx を 0.4 系を使うようにすると正常に動きました．
+なので sqlx を 0.4 系を使うようにすると正常に動きました．
 
 ```
 [dependencies]
