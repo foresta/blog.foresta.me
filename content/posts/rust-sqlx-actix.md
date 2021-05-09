@@ -1,8 +1,8 @@
 +++
 title="actix-web と sqlx を使おうとしてハマったこと"
 date="2021-05-09T08:44:35+09:00"
-categories = []
-tags = []
+categories = ["engineering"]
+tags = ["rust", "actix", "actix-web", "sqlx"]
 thumbnail = ""
 +++
 
