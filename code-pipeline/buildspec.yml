@@ -18,4 +18,5 @@ phases:
       - /usr/local/bin/hugo
 artifacts:
   files:
-    - 'public/**/*'
+    - '**/*'
+  base-directory: 'public'
