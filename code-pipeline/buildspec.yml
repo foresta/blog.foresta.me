@@ -15,9 +15,6 @@ phases:
       - npm ci 
       - npm run webpack
       - /usr/local/bin/hugo
-  post_build:
-    commands:
-      - aws s3 sync --delete ./public s3://blog.foresta.me/
 artifacts:
   files:
     - 'public/**/*'
