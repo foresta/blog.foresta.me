@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
+      - HUGO_VERSION=v0.85.0
       - echo hugo version is ${HUGO_VERSION}
       - curl -Ls https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -o /tmp/hugo.tar.gz
       - tar zxf /tmp/hugo.tar.gz -C /tmp
