@@ -17,13 +17,51 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        options: {
-          presets: ['es2015'],
-        },
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+            },
+          }
+        ]
       },
-      {test: /\.css$/, loader: 'style!css'},
-      {test: /\.scss$/, loaders: ['style-loader', 'css-loader', 'sass-loader']},
+      {
+        test: /\.scss$/, 
+        use: [
+          'style-loader', 
+          {
+            loader: 'css-loader', 
+            options: {
+              url: false,
+              sourceMap: true,
+              // 0 => no loaders (default);
+              // 1 => postcss-loader;
+              // 2 => postcss-loader, sass-loader
+              importLoaders: 2
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            }
+          }
+        ],
+      },
+      {
+        test: /\.css$/, 
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+              sourceMap: true
+            }
+          }
+        ]
+      },
       {test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: 'url-loader?limit=100000'},
     ],
   },

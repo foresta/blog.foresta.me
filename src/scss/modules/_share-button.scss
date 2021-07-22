@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $social-btn-close-size: 25px;
 $social-btn-close-px: 25;
 $social-btn-size: 48px;
@@ -47,15 +49,15 @@ $social-btn-px: 45;
           top: $padding;
         }
         &.pocket {
-          left: -132 * 1.732 / 2 + px;
-          bottom: -132 / 2 + px;
+          left: -132 * math.div(1.732, 2) + px;
+          bottom: math.div(-132, 2) + px;
         }
         &.hatena {
           bottom: $padding;
         }
         &.twitter {
-          left: -132 * 1.732 / 2 + px;
-          top: -132 / 2 + px;
+          left: -132 * math.div(1.732, 2) + px;
+          top: math.div(-132, 2) + px;
         }
       }
     }

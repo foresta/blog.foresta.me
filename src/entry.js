@@ -1,3 +1,5 @@
+import "@babel/polyfill";
+
 import RippleEffect from './js/RippleEffect';
 import ShareButton from './js/ShareButton';
 import SocialShare from './js/SocialShare';
