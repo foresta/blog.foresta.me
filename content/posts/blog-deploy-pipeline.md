@@ -1,6 +1,6 @@
 +++
 title="ブログをAWS の CodePipeline でデプロイする"
-date="2021-07-23T02:03:31+09:00"
+date="2021-07-23T14:30:00+09:00"
 categories = ["engineering"]
 tags = ["aws", "blog", "codepipeline", "codedeploy", "infra", "hugo"]
 thumbnail = ""
