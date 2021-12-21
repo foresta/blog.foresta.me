@@ -2,7 +2,7 @@
 title="検索システムのワイルドカードクエリ"
 date="2020-12-13T16:13:34+09:00"
 categories = ["engineering"]
-tags = ["information_retrieval", "情報検索"]
+tags = ["information-retrieval", "情報検索"]
 thumbnail = ""
 +++
 

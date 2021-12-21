@@ -2,7 +2,7 @@
 title="情報検索システムのクエリのスペルミス修正の概要"
 date="2020-12-21T00:10:00+09:00"
 categories = ["engineering"]
-tags = ["information_retrieval", "情報検索"]
+tags = ["information-retrieval", "情報検索"]
 thumbnail = ""
 +++
 

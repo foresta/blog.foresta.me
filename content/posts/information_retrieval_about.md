@@ -2,7 +2,7 @@
 title="情報検索の概要について"
 date="2020-10-25T23:18:12+09:00"
 categories = ["engineering"]
-tags = ["information_retrieval", "情報検索"]
+tags = ["information-retrieval", "情報検索"]
 thumbnail = ""
 +++
 
