@@ -215,7 +215,7 @@ case result of
 このAdditionですが、他の言語でサポートしている言語はそんなに多くないらしいです。\
 そんな中RustのEnumはAdditionができるためcardinalityを小さくすることが可能になり素晴らしいとelmの公式で褒められていました。(Rustやりたくなってきた)
 
-{{< tweet 1042190921008209920 >}}
+{{< tweet user="kz_morita" id="1042190921008209920" >}}
 
 ## まとめ
 

@@ -137,7 +137,7 @@ rsync -rlptgoD --delete --exclude ".git/" jenkinsのワークスペースへの�
 
 かなり楽できたのでおすすめです。
 
-{{< tweet 1051139992045551617 >}}
+{{< tweet user="kz_morita" id="1051139992045551617" >}}
 
 ## 参考
 

@@ -259,4 +259,4 @@ val map5 = Map(1 -> "A", 2 -> "B", 3 -> "C", 4 -> "D", 5 -> "E")
 assert(map5.isInstanceOf[HashMap[Int, String]])
 ```
 
-{{< tweet 1454449881066524673 >}}
+{{< tweet user="kz_morita" id="1454449881066524673" >}}

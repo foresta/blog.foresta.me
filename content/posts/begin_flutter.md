@@ -38,7 +38,7 @@ https://flutter.dev/docs/get-started/install/macos
 
 途中で`$ flutter doctor` コマンドを入力したら、`brew link` で結構失敗して詰まったりしました。
 なのでまだ、iOS環境ではビルドを試せてないです。
-{{< tweet 1122686202379816961 >}}
+{{< tweet user="kz_morita" id="1122686202379816961" >}}
 
 ### 公式チュートリアルを実行してみる
 

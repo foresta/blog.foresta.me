@@ -134,5 +134,5 @@ Cache-Control: private,no-cache,no-store,max-age=0,must-revalidate,pre-check=0,p
 
 今回は，Cache-Control について簡単にまとめました．結構難しい（キャッシュされるためのフローなど）ですが，あやまると思わぬ事故を招きそうなためもう少し調査などして理解を深めたいと思います．
 
-{{< tweet 1363008535529811974 >}}
+{{< tweet user="kz_morita" id="1363008535529811974" >}}
 
