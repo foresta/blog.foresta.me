@@ -8,7 +8,7 @@ thumbnail = ""
 
 こんにちは、{{< exlink href="https://twitter.com/kz_morita" text="@kz_morita" >}}です。
 
-今回は、{{< exlink href="https://www.publickey1.jp/blog/22/electronrusttauri.html" text="こちらの記事" >}} で紹介されていた、Electron の大体を目指すデスクトップアプリ開発のフレームワークである、Tauri を触ってみます。
+今回は、{{< exlink href="https://www.publickey1.jp/blog/22/electronrusttauri.html" text="こちらの記事" >}} で紹介されていた、Electron の代替を目指すデスクトップアプリ開発のフレームワークである、Tauri を触ってみます。
 
 ## 環境構築
 
