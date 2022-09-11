@@ -4,4 +4,4 @@
 DIR=$(cd $(dirname $0);pwd)
 cd $DIR
 
-hugo new posts/$1.md --editor nvim
+hugo new posts/$1.md
