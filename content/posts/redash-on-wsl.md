@@ -23,7 +23,7 @@ README に書いてある通りに構築を進めていきます。
 
 ```bash
 $ git clone https://github.com/kakakakakku/redash-hands-on.git
-$ cd redash-hands-opn
+$ cd redash-hands-on
 ```
 
 ### Docker
