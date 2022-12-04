@@ -14,7 +14,7 @@ export default class SocialShare {
         encodeURIComponent(siteUrl);
     }
     if (service == 'twitter') {
-      const message = title + ' @kz_morita';
+      const message = title;
       serviceUrl =
         'https://twitter.com/share?url=' +
         encodeURIComponent(siteUrl) +
