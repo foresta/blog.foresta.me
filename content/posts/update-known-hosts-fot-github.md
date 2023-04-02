@@ -1,8 +1,8 @@
 +++
 title="GitHub の SSH Host キーの置き換えに伴う対応メモ"
 date="2023-04-02T19:33:38+09:00"
-categories = []
-tags = []
+categories = ["engineering"]
+tags = ["github", "ssh"]
 thumbnail = ""
 +++
 
