@@ -2,7 +2,7 @@
 title="WSL 上に IntelliJ を入れて Scala を開発する"
 date="2023-06-11T19:06:17+09:00"
 categories = ["engineering"]
-tags = ["IntelliJ", "Scala", "wsl"]
+tags = ["intellij", "scala", "wsl"]
 thumbnail = ""
 +++
 
