@@ -1,6 +1,15 @@
 <!DOCTYPE>
 {{ with .Site.LanguageCode }}<html lang="{{ . }}">{{ else }}<html>{{ end }}
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C2DXR0SL1H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C2DXR0SL1H');
+  </script>
   <meta charset="utf-8">
   {{ partial "_seo_schema" . }}
   <title>{{ .Title }}</title>
