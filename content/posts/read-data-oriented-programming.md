@@ -78,7 +78,7 @@ person.fullName() // => Tanaka Taro
 #### DOP like
 
 ```
-val personData = Map("lastName" => "Tanaka", "firstName" -> "Taro")
+val personData = Map("lastName" -> "Tanaka", "firstName" -> "Taro")
 fullName(personData) // => Tanaka Taro
 ```
 
