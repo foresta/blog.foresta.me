@@ -4,7 +4,7 @@ title = "Homesteadに複数サイトを追加する二つの方法"
 
 categories = ["engineering"]
 tags = ["homestead", "laravel", "php"]
-thumbnail="/posts/thumbnails/laravel-logo.jpg"
+thumbnail="thumbnails/laravel-logo.jpg"
 +++
 
 Homesteadに複数サイト追加するために二つの方法があったのでメモ。

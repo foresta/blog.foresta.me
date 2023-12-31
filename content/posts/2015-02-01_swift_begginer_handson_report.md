@@ -4,7 +4,7 @@ title = "Swift初心者向け勉強会に行ってきました"
 
 categories = ["engineering"]
 tags = ["swift", "勉強会"]
-thumbnail="/posts/thumbnails/swift-logo.png"
+thumbnail="thumbnails/swift-logo.png"
 +++
 
 株式会社LIGさんの [いいオフィス](https://iioffice.liginc.co.jp/)で行われた

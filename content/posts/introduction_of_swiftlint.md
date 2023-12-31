@@ -1,6 +1,6 @@
 +++
 title = "SwiftLintを導入とそのきっかけについて"
-thumbnail = "/posts/introduction_of_swiftlint/thumbnail.png"
+thumbnail = "introduction_of_swiftlint/thumbnail.png"
 tags = ["swift", "swiftlint", "xcode"]
 categories = ["engineering"]
 date = "2019-04-11"

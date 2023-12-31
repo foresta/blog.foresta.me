@@ -1,11 +1,9 @@
 +++
 date = "2018-08-02T13:02:25+09:00"
 title = "Planckキーボードを作ってみた"
-
 categories = ["engineering"]
 tags = ["keyboard"]
-thumbnail = "/posts/thumbnails/keyboard.jpg"
-
+thumbnail = "thumbnails/keyboard.jpg"
 +++
 
 以前から興味があった自作キーボードですが、Planckキーボードを作って見たのでそのログです。

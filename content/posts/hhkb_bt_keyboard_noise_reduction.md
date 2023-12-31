@@ -2,7 +2,7 @@
 categories = ["engineering"]
 date = "2019-04-07"
 title = "HHKB BTを静音化してみた"
-thumbnail = "/posts/hhkb_bt_keyboard_noise_reduction/thumbnail.jpg"
+thumbnail = "hhkb_bt_keyboard_noise_reduction/thumbnail.jpg"
 tags = ["keyboard"]
 +++
 

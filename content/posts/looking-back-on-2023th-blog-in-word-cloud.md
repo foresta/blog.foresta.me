@@ -3,7 +3,7 @@ title="word cloud で 2023 年のブログを振り返る"
 date="2023-12-31T15:26:25+09:00"
 categories = ["engineering"]
 tags = ["blog", "word_cloud"]
-thumbnail = "/posts/looking-back-on-2023th-blog-in-word-cloud/wordcloud.png"
+thumbnail = "looking-back-on-2023th-blog-in-word-cloud/wordcloud.png"
 +++
 
 こんにちは、{{< exlink href="https://twitter.com/kz_morita" text="@kz_morita" >}}です。
