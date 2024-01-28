@@ -2,7 +2,7 @@
 title="『データマネジメントが30分でわかる本』を読んだ"
 date="2023-10-09T18:36:24+09:00"
 categories = ["engineering"]
-tags = ["book", "book_review"]
+tags = ["book"]
 thumbnail = ""
 +++
 

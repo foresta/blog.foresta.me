@@ -2,7 +2,7 @@
 title="過去に読んだ中で特にためになった技術書10選"
 date="2021-06-20T17:04:30+09:00"
 categories = ["engineering"]
-tags = ["books"]
+tags = ["book"]
 thumbnail = ""
 +++
 

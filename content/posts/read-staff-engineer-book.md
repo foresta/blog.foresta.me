@@ -2,7 +2,7 @@
 title="『スタッフエンジニア マネジメントを超えるリーダーシップ』を読んだ"
 date="2023-05-28T01:16:18+09:00"
 categories = ["engineering"]
-tags = ["book", "book_review", "career"]
+tags = ["book", "career"]
 thumbnail = ""
 +++
 
