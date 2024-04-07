@@ -10,29 +10,27 @@ thumbnail = ""
 
 最近気になっている Platform Engineering 周りの勉強会が開催されていたので参加してきました。
 
-- {{< exlink href="https://platformengineering.connpass.com/event/299834/" >}}
+-   {{< exlink href="https://platformengineering.connpass.com/event/299834/" >}}
 
 ## 各セッションについて
 
 以下のようなセッションが行われました。
 資料などとともに感想書いていきます。
 
-### A Platform for Challengers: How we make tech decisions at Upsider	
+### A Platform for Challengers: How we make tech decisions at Upsider
 
 こちらは、UPSIDER という法人カードサービスで行われている Platform Engineering の話でした。
 
 個人的に気になったのは、{{< exlink href="https://www.crossplane.io/" text="crossplane" >}} という k8s アドオンです。
 k8s まわりあまり触ってこなかったのですが、現在データ基盤の Platform Engineering やっていきたいと思い {{< exlink href="https://datadeveloperplatform.org/" text="Data Developer Platform">}} のサイトなどを読んだりしていた中で、`Control Plane`, `Development Plane`, `Data Activation Plane` というレイヤー構造の話が出てきました。
 
-- {{< exlink href="https://datadeveloperplatform.org/architecture/" >}}
+-   {{< exlink href="https://datadeveloperplatform.org/architecture/" >}}
 
 この辺りの概念があんまりわかってなかったのですが、この crossplane がまさに、control plane のフレームワークだなと思ってこのあたりはかなり参考になりました。
 
 抽象的な概念学ぶために実際のツール触ってみるのよさそうなので触って勉強してみようと思いました。
 
-{{< tweet 1732780986520457684 >}}
- 
-
+{{< tweet id="1732780986520457684" user="kz_morita" >}}
 
 ### Repro の開発組織体制の変遷そして Platform Engineering
 
@@ -44,7 +42,7 @@ k8s まわりあまり触ってこなかったのですが、現在データ基�
 
 印象に残ったのはやはり、Team Topoligy 関連の話でした。基盤チームとして他チームとどのように関わっていくかは非常に重要なトピックだと思うので、Team Topology 読まなきゃなと思います。
 
-### リクルートにおける Platform Engineering / SRE の事例共有: 8年間の歩みと今後の展望
+### リクルートにおける Platform Engineering / SRE の事例共有: 8 年間の歩みと今後の展望
 
 {{< exlink href="https://speakerdeck.com/recruitengineers/platformengineeringmeetup_suganuma" text="資料 - リクルートにおける Platform Engineering / SRE の事例共有">}}
 
@@ -52,17 +50,16 @@ k8s まわりあまり触ってこなかったのですが、現在データ基�
 
 この Platform については他の勉強会の資料も紹介されていたので貼っておきます。
 
-- {{< exlink href="https://speakerdeck.com/recruitengineers/mlops-kato" text="リクルートのデータ活用を加速させるセルフサービス型 A/B テスト基盤の設計と実装 / MLOps_kato">}}
-- {{< exlink href="https://speakerdeck.com/recruitengineers/cndt2021-kojisuganuma-eb8b8398-1a05-416a-bee4-af8be882af29" text="クラウドネイティブ×持続可能 セルフサービス型データ分析ジョブプラットフォーム設計プラクティス / cndt2021_kojisuganuma" >}}
+-   {{< exlink href="https://speakerdeck.com/recruitengineers/mlops-kato" text="リクルートのデータ活用を加速させるセルフサービス型 A/B テスト基盤の設計と実装 / MLOps_kato">}}
+-   {{< exlink href="https://speakerdeck.com/recruitengineers/cndt2021-kojisuganuma-eb8b8398-1a05-416a-bee4-af8be882af29" text="クラウドネイティブ×持続可能 セルフサービス型データ分析ジョブプラットフォーム設計プラクティス / cndt2021_kojisuganuma" >}}
 
 第一印象としては、かなり高度な Platform を構築されていてすごいなということです。開発者が GitHub 上でデータアプリケーションの開発をほぼ回せる仕組みや、内部の開発者向けに SLO 公開されていたり、まさに `Platform as a Product` だと思いました。
 
-自分の環境でも今まさに、データ基盤のPlatform 化できないかという構想があるため非常に参考になりそうなところが多く思います。
+自分の環境でも今まさに、データ基盤の Platform 化できないかという構想があるため非常に参考になりそうなところが多く思います。
 
 まずどこから着手始めたら良いのか、悩みそうですが着実に進めれたら良いなと思いました。
 
-
-### ヤフーにおけるWebアプリケーション向けPaaS〜開発と運用の小史
+### ヤフーにおける Web アプリケーション向け PaaS〜開発と運用の小史
 
 {{< exlink href="https://speakerdeck.com/hhiroshell/how-to-put-platforms-on-track" text="資料 - 大規模Webアプリケーションプラットフォームを開発して軌道に乗るまでにやったこと / How to Put Platforms on Track" >}}
 
@@ -82,4 +79,4 @@ AWS などのサービスがベータリリースされ、GA されるといっ�
 社内 Platform とはいえ本当にプロダクト開発そのものだなということが改めて実感できました。
 また、Platform を通して別チームの人とどのように関わっていくか。そのあたりの知識については Team Topoligy という本を読まなければなと改めて感じました。
 
-- {{< exlink href="https://www.amazon.co.jp/dp/4820729632" text="チームトポロジー 価値あるソフトウェアをすばやく届ける適応型組織設計">}}
+-   {{< exlink href="https://www.amazon.co.jp/dp/4820729632" text="チームトポロジー 価値あるソフトウェアをすばやく届ける適応型組織設計">}}
