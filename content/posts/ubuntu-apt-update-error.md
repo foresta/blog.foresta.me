@@ -1,5 +1,5 @@
 +++
-title="Ubuntu で apt update エラーの対照法"
+title="Ubuntu で apt update エラーの対処法"
 date="2024-04-07T21:37:37+09:00"
 categories = ["engineering"]
 tags = ["ubuntu", "linux"]
