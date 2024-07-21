@@ -4,7 +4,6 @@ date="2024-07-21T12:00:31+09:00"
 categories = ["engineering"]
 tags = ["ddd", "functional", "fp"]
 thumbnail = ""
-draft=true
 +++
 
 こんにちは、{{< exlink href="https://twitter.com/kz_morita" text="@kz_morita" >}}です。
