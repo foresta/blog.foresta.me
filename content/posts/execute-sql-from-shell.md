@@ -2,7 +2,7 @@
 title="ShellScript から MySQL コマンドを実行する"
 date="2023-02-26T17:46:53+09:00"
 categories = ["engineering"]
-tags = ["mysql", "shell", "linux"]
+tags = ["mysql", "shellscript", "linux"]
 thumbnail = ""
 +++
 
