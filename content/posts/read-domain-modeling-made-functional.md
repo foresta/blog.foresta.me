@@ -2,7 +2,7 @@
 title="『関数型ドメインモデリング』を読んだ"
 date="2024-07-21T12:00:31+09:00"
 categories = ["engineering"]
-tags = ["ddd", "functional", "fp"]
+tags = ["book", "ddd", "functional", "fp"]
 thumbnail = ""
 +++
 

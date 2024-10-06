@@ -2,7 +2,7 @@
 title="『達人に学ぶDB設計 徹底指南書』を読んだ"
 date="2024-06-30T21:32:14+09:00"
 categories = ["engineering"]
-tags = ["database", "designe"]
+tags = ["book", "database", "design"]
 thumbnail = ""
 +++
 
