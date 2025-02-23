@@ -1,6 +1,6 @@
 +++
 title="Custom Generic Test で dbt test を高速化した話"
-date="2025-02-17T01:22:09+09:00"
+date="2025-02-23T10:22:09+09:00"
 categories = ["engineering"]
 tags = ["dbt", "test", "data-engineering"]
 thumbnail = ""
