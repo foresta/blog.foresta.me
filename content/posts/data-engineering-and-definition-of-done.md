@@ -1,6 +1,6 @@
 +++
 title="データエンジニアリングと完了の定義"
-date="2025-06-22T23:22:16+09:00"
+date="2025-06-29T19:00:00+09:00"
 categories = ["poem"]
 tags = ["data engineering", "scrum"]
 thumbnail = ""
