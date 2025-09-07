@@ -1,6 +1,6 @@
 +++
 title="Cursor から Notion MCP を利用する"
-date="2025-09-07T22:52:11+09:00"
+date="2025-09-08T00:10:11+09:00"
 categories = ["engineerign"]
 tags = ["cursor", "mcp", "notion"]
 thumbnail = ""
